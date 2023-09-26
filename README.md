@@ -1,1 +1,1 @@
-# KnowledgePredication
+# Knowledge Predication
