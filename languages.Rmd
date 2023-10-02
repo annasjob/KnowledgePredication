@@ -1,0 +1,53 @@
+---
+title: "Knowledge Predication - Online Supplementary Materials"
+output:
+  html_document:
+    theme: paper
+    include:
+      after_body: footer.html
+    toc: true
+    toc_depth: 5
+    toc_float: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=FALSE, echo=FALSE}
+library(DT)
+library(tidyverse)
+library(lingtypology)
+library(knitr)
+```
+
+
+This site presents **the Knowledge Predication Database**, a typological database of knowledge predication in the world's languages.
+
+---
+
+### Sample
+
+The database contains information on knowledge predication in 83 languages.
+
+```{r, include=FALSE, echo=FALSE}
+df <- read.csv("languages.csv", sep=";")
+```
+
+
+```{r, echo=FALSE}
+map.feature(languages = lang.iso(df$lng),
+            features = df$Type,
+            label = df$lng,
+            popup = df$lng
+            )
+
+```
+
+
+
+
+
+
+

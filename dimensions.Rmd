@@ -1,0 +1,30 @@
+---
+title: "The Dimensions of Knowledge Predication"
+author: "Anna Sjöberg"
+date: '2023-10-02'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Under construction...
+---
+
+### Data
+
+#The table below shows the collected information on each of the continuative expressions in the database. To see more columns, click on the `Column visibility` button.
+
+#```{r echo = FALSE, results = 'asis', message=FALSE, warning=FALSE}
+#library(readr)
+#df2 <- read.csv("markers_dim1.csv", sep=";")
+#datatable(
+#  data = df2,
+#  filter = "top",
+#  extensions = 'Buttons', options = list(dom = 'Bfrtip', columnDefs = #list(list(visible=FALSE, targets=c(0))),
+#  buttons = list(list(extend = 'colvis', columns = #c(1,2,3,4,5,7,9,10,11,12,13,14,16,18,20,22,23))))
+#)
+#```
+
+
