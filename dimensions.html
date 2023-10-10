@@ -350,49 +350,12 @@ Predication</h1>
 <hr />
 <div id="explore-the-dimensions" class="section level3">
 <h3>Explore the dimensions</h3>
+<p><div style="width: 100% ; height: 400px ; text-align: center; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;" class="muted well">Shiny applications not supported in static R Markdown documents</div></p>
 <p>#The table below shows the collected information on each of the
 continuative expressions in the database. To see more columns, click on
 the <code>Column visibility</code> button.</p>
-<pre class="r"><code>library(shiny)
-library(ggiraph)
-library(readr)</code></pre>
-<pre><code>## Warning: package &#39;readr&#39; was built under R version 4.1.3</code></pre>
-<pre class="r"><code>library(ggplot2)
-
-# Define UI for application that draws a histogram
-ui &lt;- fluidPage(
-
-    # Application title
-    titlePanel(&quot;The Dimensions of the CMDS analysis&quot;),
-
-    inputPanel(
-      selectInput(&quot;dim1&quot;, label = &quot;Dimension on x-axis&quot;,
-                  choices = c(&quot;Dimension1&quot;, &quot;Dimension2&quot;, &quot;Dimension3&quot;, &quot;Dimension4&quot;, &quot;Dimension5&quot;, &quot;Dimension6&quot;), selected = &quot;Dimension1&quot;),
-      selectInput(&quot;dim2&quot;, &quot;Dimension on y-axis&quot;, choices = c(&quot;Dimension1&quot;, &quot;Dimension2&quot;, &quot;Dimension3&quot;, &quot;Dimension4&quot;, &quot;Dimension5&quot;, &quot;Dimension6&quot;), selected = &quot;Dimension2&quot;)),
-
-    girafeOutput(&quot;plot&quot;)
-)
-
-
-server &lt;- function(input, output, session) {
-  df&lt;-read.table(&quot;dimensions.csv&quot;, sep=&quot;;&quot;, header=T)
-    output$plot &lt;- renderGirafe({
-        # generate bins based on input$bins from ui.R
-#      , tooltip=Verse, data_id=Verse
-      g &lt;- ggplot(data=df) + geom_point_interactive(aes(x=df[,input$dim1], y=df[,input$dim2], tooltip=Verse_text, data_id=Verse), shape=19, size=3) + ylab(input$dim2) + xlab(input$dim1)
-      girafe(ggobj=g)
-    })
-}
-
-#color=as.factor(df[,input$dim1]
-# Run the application 
-shinyApp(ui = ui, server = server)</code></pre>
-<p><div style="width: 100% ; height: 400px ; text-align: center; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;" class="muted well">Shiny applications not supported in static R Markdown documents</div></p>
 </div>
 
-<br>
-<br>
-<p> <center> Anna Sjöberg, 2023 </center></p>
 
 
 </div>
