@@ -23,7 +23,7 @@ library(knitr)
 ```
 
 
-This site presents **the Knowledge Predication Database**, a typological database of knowledge predication in the world's languages.
+This site contains supplementary materials to my dissertation **Knowledge predication - A semantic typology**.
 
 ---
 

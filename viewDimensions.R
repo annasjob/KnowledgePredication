@@ -1,35 +1,22 @@
----
-title: "The Dimensions of Knowledge Predication"
-author: "Anna Sjöberg"
-runtime: shiny
-output: 
-  html_document:
-    theme: paper
-#    include:
-#      after_body: footer.html
-    toc: true
-    toc_depth: 5
-    toc_float: true
----
+#
+# This is a Shiny web application. You can run the application by clicking
+# the 'Run App' button above.
+#
+# Find out more about building applications with Shiny here:
+#
+#    http://shiny.rstudio.com/
+#
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(ggplot2)
-library(ggiraph)
-library(shiny)
-```
-
----
-
-### Explore the dimensions
-
-```{r tabsets, echo=FALSE} 
 library(shiny)
 library(ggiraph)
+library(readr)
 library(ggplot2)
 
-# Define UI for application that draws a figure of the verses in the CMDS dimensions
+# Define UI for application that draws a histogram
 ui <- fluidPage(
+
+    # Application title
+    titlePanel("The Dimensions of the CMDS analysis"),
 
     inputPanel(
       selectInput("dim1", label = "Dimension on x-axis",
@@ -53,7 +40,3 @@ server <- function(input, output, session) {
 #color=as.factor(df[,input$dim1]
 # Run the application 
 shinyApp(ui = ui, server = server)
-
-```
-
-#The table below shows the collected information on each of the continuative expressions in the database. To see more columns, click on the `Column visibility` button.
