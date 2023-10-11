@@ -29,7 +29,7 @@ This site contains supplementary materials to my dissertation **Knowledge predic
 
 ### Sample
 
-The database contains information on knowledge predication in 83 languages.
+*Knowledge predication* builds on an 83-languages variety sample.
 
 ```{r, include=FALSE, echo=FALSE}
 df <- read.csv("languages.csv", sep=";")
@@ -39,8 +39,8 @@ df <- read.csv("languages.csv", sep=";")
 ```{r, echo=FALSE}
 map.feature(languages = lang.iso(df$lng),
             features = df$Type,
-            label = df$lng,
-            popup = df$lng
+            label = lang.iso(df$lng),
+            popup = lang.iso(df$lng)
             )
 
 ```

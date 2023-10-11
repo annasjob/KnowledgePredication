@@ -1,12 +1,93 @@
 ---
 title: "Markers associated with the dimensions of knowledge predication"
-author: "Anna Sjöberg"
-date: '2023-10-02'
-output: html_document
+output: 
+  html_document:
+    theme: paper
+    include:
+      after_body: footer.html
+    toc: true
+    toc_depth: 5
+    toc_float: true
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include=FALSE, echo=FALSE}
+library(DT)
+library(lingtypology)
+knitr::opts_chunk$set(echo = FALSE)
+df <- read.csv("pointbiserial_stems.csv", header=T, sep="\t", encoding="UTF-8")
+df$Language <- lang.iso(df$Language)
+df$P <- round(df$P, 4)
+df$R <- round(df$R, 2)
+df <- df[,c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Dimension", "Combinations")]
 ```
 
-Under construction...
+### Constructional Dimension 1
+The tables below show the markers correlated with Constructional Dimension 1, i.e. the first dimension of a CMDS analysis of a distance measure based only on *constructional markers*. First, the markers *positively* correlated with Constructional Dimension 1 are given. In section 9.3.2. of *Knowledge predication* I analyse these as being related to *achievement meaning*. This is followed by markers *negatively* correlated with Constructional Dimension 1, which I analyse as being related to *state meaning*. 
+
+#### Markers positively  correlated with Constructional Dimension 1
+
+##### Lexical markers
+```{r}
+df1 <- df[which((df$Dimension=="Dim1cx") & (df$R > 0)),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
+datatable(data = df1)
+
+```
+##### Constructional markers
+
+#### Markers negatively correlated with Constructional Dimension 1
+```{r}
+df2 <- df[which((df$Dimension=="Dim1cx") & (df$R < 0)),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
+datatable(data = df2)
+
+```
+
+### Lexical Dimension 1
+***Under construction***
+
+```{r}
+df3 <- df[which((df$Dimension=="Dim1lex")),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
+datatable(data = df3)
+
+```
+
+### Dimension 2
+***Under construction***
+
+```{r}
+df4 <- df[which((df$Dimension=="Dim2")),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
+datatable(data = df4)
+
+```
+
+### Dimension 3
+
+***Under construction***
+```{r}
+df5 <- df[which((df$Dimension=="Dim3")),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
+datatable(data = df5)
+
+```
+### Dimension 4
+
+***Under construction***
+```{r}
+df6 <- df[which((df$Dimension=="Dim4")),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
+datatable(data = df6)
+
+```
+### Dimension 5
+
+***Under construction***
+```{r}
+df7 <- df[which((df$Dimension=="Dim5")),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
+datatable(data = df7)
+
+```
+### Dimension 6
+
+***Under construction***
+```{r}
+df8 <- df[which((df$Dimension=="Dim6")),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
+datatable(data = df8)
+
+```

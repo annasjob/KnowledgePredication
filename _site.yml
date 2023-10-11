@@ -3,7 +3,7 @@ navbar:
   title: "Knowledge Predication"
   left:
     - text: "Languages"
-      href: index.html
+      href: languages.html
     - text: "Dimensions"
       href: dimensions.html
     - text: "Markers"
