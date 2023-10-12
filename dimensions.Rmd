@@ -21,9 +21,9 @@ library(shiny)
 ---
 
 ### Explore the dimensions
-
+<iframe height="400" width="100%" frameborder="no" src="https://github.com/annasjob/viewDimensions/"> </iframe>
 ```{r tabsets, echo=FALSE} 
-shiny::runGitHub("KnowledgePredication", "annasjob", ref="main")
+#shiny::runGitHub("viewDimensions", "annasjob", ref="main")
 
 ```
 
