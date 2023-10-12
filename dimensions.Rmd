@@ -1,7 +1,6 @@
 ---
 title: "The Dimensions of Knowledge Predication"
 author: "Anna Sjöberg"
-runtime: shiny
 output: 
   html_document:
     theme: paper
@@ -13,7 +12,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 library(ggplot2)
 library(ggiraph)
 library(shiny)
@@ -24,36 +23,15 @@ library(shiny)
 ### Explore the dimensions
 
 ```{r tabsets, echo=FALSE} 
-library(shiny)
-library(ggiraph)
-library(ggplot2)
-
-# Define UI for application that draws a figure of the verses in the CMDS dimensions
-ui <- fluidPage(
-
-    inputPanel(
-      selectInput("dim1", label = "Dimension on x-axis",
-                  choices = c("Dimension1", "Dimension2", "Dimension3", "Dimension4", "Dimension5", "Dimension6"), selected = "Dimension1"),
-      selectInput("dim2", "Dimension on y-axis", choices = c("Dimension1", "Dimension2", "Dimension3", "Dimension4", "Dimension5", "Dimension6"), selected = "Dimension2")),
-
-    girafeOutput("plot")
-)
-
-
-server <- function(input, output, session) {
-  df<-read.table("dimensions.csv", sep=";", header=T)
-    output$plot <- renderGirafe({
-        # generate bins based on input$bins from ui.R
-#      , tooltip=Verse, data_id=Verse
-      g <- ggplot(data=df) + geom_point_interactive(aes(x=df[,input$dim1], y=df[,input$dim2], tooltip=Verse_text, data_id=Verse), shape=19, size=3) + ylab(input$dim2) + xlab(input$dim1)
-      girafe(ggobj=g)
-    })
-}
-
-#color=as.factor(df[,input$dim1]
-# Run the application 
-shinyApp(ui = ui, server = server)
+shiny::runGitHub("KnowledgePredication", "annasjob", ref="main")
 
 ```
 
 #The table below shows the collected information on each of the continuative expressions in the database. To see more columns, click on the `Column visibility` button.
+```{r}
+library(DT)
+df<-read.table("dimensions.csv", sep=";", header=T, encoding="UTF-8")
+datatable(data=df)
+
+```
+
