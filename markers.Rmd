@@ -14,12 +14,20 @@ output:
 library(DT)
 library(lingtypology)
 knitr::opts_chunk$set(echo = FALSE)
-df <- read.csv("pointbiserial_stems.csv", header=T, sep="\t", encoding="UTF-8")
+df <- read.csv("markers_pb_lexical.csv", header=T, sep="\t", encoding="UTF-8")
 df$Language <- lang.iso(df$Language)
 df$P <- round(df$P, 4)
 df$R <- round(df$R, 2)
-df <- df[,c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Dimension", "Combinations")]
+df <- df[,c("Marker", "Language", "Ocurrences", "R", "P", "Connections", "Dimension", "CombinesWith")]
+
+dfb <- read.csv("markers_pb_constructional.csv", header=T, sep="\t", encoding="UTF-8")
+dfb$Language <- lang.iso(dfb$Language)
+dfb$P <- round(dfb$P, 4)
+dfb$R <- round(dfb$R, 2)
+dfb <- dfb[,c("Marker", "Language", "Ocurrences", "R", "P", "CombinesWith", "CombinesWithGloss", "Function", "Dimension")]
+
 ```
+In chapter 9 of *Knowledge predication*, I use the markers associated with the dimensions of the CMDS analysis of the extended knowledge domain to characterise the semantics of the dimension. Below, the relevant markers may be found, dimension by dimension and divided into lexical and constructional (see section 3.6.2 of *Knowledge predication*).
 
 ### Constructional Dimension 1
 The tables below show the markers correlated with Constructional Dimension 1, i.e. the first dimension of a CMDS analysis of a distance measure based only on *constructional markers*. First, the markers *positively* correlated with Constructional Dimension 1 are given. In section 9.3.2. of *Knowledge predication* I analyse these as being related to *achievement meaning*. This is followed by markers *negatively* correlated with Constructional Dimension 1, which I analyse as being related to *state meaning*. 
@@ -28,66 +36,130 @@ The tables below show the markers correlated with Constructional Dimension 1, i.
 
 ##### Lexical markers
 ```{r}
-df1 <- df[which((df$Dimension=="Dim1cx") & (df$R > 0)),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
-datatable(data = df1)
+df1 <- df[which((df$Dimension=="Dim1cx") & (df$R > 0)),c("Marker", "Language", "Ocurrences", "R", "P", "Connections", "CombinesWith")]
+datatable(data = df1, options=list(order=list(4, "desc")))
 
 ```
 ##### Constructional markers
+```{r}
+dfb1 <- dfb[which((dfb$Dimension=="Dim1cx") & (dfb$R > 0)),c("Marker", "Language", "Ocurrences", "R", "P", "CombinesWith", "CombinesWithGloss", "Function")]
+datatable(data = dfb1, options=list(order=list(4, "desc")))
+
+```
+
 
 #### Markers negatively correlated with Constructional Dimension 1
+##### Lexical markers
 ```{r}
-df2 <- df[which((df$Dimension=="Dim1cx") & (df$R < 0)),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
-datatable(data = df2)
+df2 <- df[which((df$Dimension=="Dim1cx") & (df$R < 0)),c("Marker", "Language", "Ocurrences", "R", "P", "Connections", "CombinesWith")]
+datatable(data = df2, options=list(order=list(4, "asc")))
+
+```
+##### Constructional markers
+```{r}
+dfb2 <- dfb[which((dfb$Dimension=="Dim1cx") & (dfb$R < 0)),c("Marker", "Language", "Ocurrences", "R", "P", "CombinesWith", "CombinesWithGloss", "Function")]
+datatable(data = dfb2, options=list(order=list(4, "asc")))
 
 ```
 
 ### Lexical Dimension 1
-***Under construction***
+The two following tables show the markers associated with Lexical Dimension 1, that is, the first dimension of a CMDS analysis of a similarity measure based only on lexical markers. In section 9.3.3 of *Knowledge predication*, I analyse this dimension as being sensitive to the distinction between *knowing* and *understanding*.
 
+##### Lexical markers
 ```{r}
-df3 <- df[which((df$Dimension=="Dim1lex")),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
-datatable(data = df3)
+df3 <- df[which((df$Dimension=="Dim1lex")),c("Marker", "Language", "Ocurrences", "R", "P", "Connections", "CombinesWith")]
+datatable(data = df3, options=list(order=list(4, "desc")))
+
+```
+
+##### Constructional markers
+```{r}
+dfb3 <- dfb[which((dfb$Dimension=="Dim1lex")),c("Marker", "Language", "Ocurrences", "R", "P", "CombinesWith", "CombinesWithGloss", "Function")]
+datatable(data = dfb3, options=list(order=list(4, "desc")))
 
 ```
 
 ### Dimension 2
-***Under construction***
+The second dimension of the CMDS analysis singles out a group of contexts that can be characterised as *find out*, analysed in section 9.3.4. of *Knowledge predication*.
 
+##### Lexical markers
 ```{r}
-df4 <- df[which((df$Dimension=="Dim2")),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
-datatable(data = df4)
+df4 <- df[which((df$Dimension=="Dim2")),c("Marker", "Language", "Ocurrences", "R", "P", "Connections", "CombinesWith")]
+datatable(data = df4, options=list(order=list(4, "desc")))
+
+```
+##### Constructional markers
+```{r}
+dfb4 <- dfb[which((dfb$Dimension=="Dim2")),c("Marker", "Language", "Ocurrences", "R", "P", "CombinesWith", "CombinesWithGloss", "Function")]
+datatable(data = dfb4, options=list(order=list(4, "desc")))
 
 ```
 
 ### Dimension 3
+Dimension 3 of the CMDS analysis is sensitive to the distinction between *know that* and *know person*. In section 11.4, I analyse this dimension as a tendency scale from *recognise* via *know person (directly)* to *know person (indirectly)* to *know that*.
 
-***Under construction***
+##### Lexical markers
 ```{r}
-df5 <- df[which((df$Dimension=="Dim3")),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
+df5 <- df[which((df$Dimension=="Dim3")),c("Marker", "Language", "Ocurrences", "R", "P", "Connections", "CombinesWith")]
 datatable(data = df5)
 
 ```
-### Dimension 4
-
-***Under construction***
+##### Constructional markers
 ```{r}
-df6 <- df[which((df$Dimension=="Dim4")),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
+dfb5 <- dfb[which((dfb$Dimension=="Dim3")),c("Marker", "Language", "Ocurrences", "R", "P", "CombinesWith", "CombinesWithGloss", "Function")]
+datatable(data = dfb5, options=list(order=list(4, "desc")))
+
+```
+
+### Dimension 4
+Dimension 4 is related to *realise* semantics, as analysed in section 9.5.
+##### Lexical markers
+```{r}
+df6 <- df[which((df$Dimension=="Dim4")),c("Marker", "Language", "Ocurrences", "R", "P", "Connections", "CombinesWith")]
 datatable(data = df6)
 
 ```
-### Dimension 5
-
-***Under construction***
+##### Constructional markers
 ```{r}
-df7 <- df[which((df$Dimension=="Dim5")),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
+dfb6 <- dfb[which((dfb$Dimension=="Dim4")),c("Marker", "Language", "Ocurrences", "R", "P", "CombinesWith", "CombinesWithGloss", "Function")]
+datatable(data = dfb6, options=list(order=list(4, "desc")))
+
+```
+
+### Dimension 5
+In section 9.6 of *Knowledge predication*, I analyse Dimension 5 as being sensitive to the distinction of lexical negation of knowledge. Due to the interaction with negative modal forms, Dimension 5 is also to a degree sensitive to modal meanings. Markers which I analyse as having lexical negation meaning are marked with an asterisk (*) in the tables below.  
+
+##### Lexical markers
+```{r}
+df7 <- df[which((df$Dimension=="Dim5")),c("Marker", "Language", "Ocurrences", "R", "P", "Connections", "CombinesWith")]
 datatable(data = df7)
 
 ```
+##### Constructional markers
+```{r}
+dfb7 <- dfb[which((dfb$Dimension=="Dim5")),c("Marker", "Language", "Ocurrences", "R", "P", "CombinesWith", "CombinesWithGloss", "Function")]
+datatable(data = dfb7, options=list(order=list(4, "desc")))
+
+```
+
 ### Dimension 6
 
-***Under construction***
+Dimension 6 singles out a small group of verses with 'know how' meaning. I analyse these in section 9.7 of *Knowledge predication*.
+
+##### Lexical markers
 ```{r}
-df8 <- df[which((df$Dimension=="Dim6")),c("Construction", "Language", "Ocurrences", "R", "P", "Connections", "Combinations")]
+df8 <- df[which((df$Dimension=="Dim6")),c("Marker", "Language", "Ocurrences", "R", "P", "Connections", "CombinesWith")]
 datatable(data = df8)
 
 ```
+##### Constructional markers
+```{r}
+dfb8 <- dfb[which((dfb$Dimension=="Dim6")),c("Marker", "Language", "Ocurrences", "R", "P", "CombinesWith", "CombinesWithGloss", "Function")]
+datatable(data = dfb8, options=list(order=list(4, "desc")))
+
+```
+
+### Downloads
+<a href="pointbiserial_stems.csv" download>Download lexical markers</a>
+
+<a href="pointbiserial_bound.csv" download>Download constructional markers</a>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Anna Sjöberg" />
+
+
+<title>Clustering of cognition-perception-ability verses</title>
+
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.20/datatables.js"></script>
+<link href="site_libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/dt-ext-buttons-1.11.3/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="site_libs/dt-ext-buttons-1.11.3/js/dataTables.buttons.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.11.3/js/buttons.html5.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.11.3/js/buttons.colVis.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.11.3/js/buttons.print.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Knowledge Predication</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Main</a>
+</li>
+<li>
+  <a href="dimensions.html">Dimensions</a>
+</li>
+<li>
+  <a href="markers.html">Markers</a>
+</li>
+<li>
+  <a href="clusters.html">Clustering</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Clustering of cognition-perception-ability
+verses</h1>
+<h4 class="author">Anna Sjöberg</h4>
+
+</div>
+
+
+<hr />
+<div id="explore-the-clustering" class="section level3">
+<h3>Explore the clustering</h3>
+<p>In the plot below, you can explore the clustering at different number
+of clusters. Pick the number of clusters in the drop-down menu. Each
+point represents a verse in the verse sample, and the colour represents
+the clustering at 10 clusters (as discussed in section 5.4 of
+<em>Knowledge predication</em>). Hover over a point to read the verse it
+represents.</p>
+<iframe height="600" width="100%" frameborder="no" src="https://annasjob.shinyapps.io/viewClusters/">
+</iframe>
+</div>
+<div id="the-clusters" class="section level3">
+<h3>The clusters</h3>
+<div id="htmlwidget-6dd70f304cb439040e3f" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6dd70f304cb439040e3f">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","REMEMBER","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","REMEMBER","REMEMBER","REMEMBER","REMEMBER","REMEMBER","REMEMBER","REMEMBER","REMEMBER","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","SEE","SEE","SEE","SEE","SEE","SEE","SEE","SEE","HEAR","HEAR","HEAR","HEAR","OBEY","OBEY","OBEY","OBEY","BELIEVE","BELIEVE","BELIEVE","BELIEVE","BELIEVE","THINK","THINK","THINK"],["KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","REMEMBER","KNOW","UNDERSTAND","UNDERSTAND","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","KNOW","REMEMBER","REMEMBER","REMEMBER","REMEMBER","REMEMBER","REMEMBER","REMEMBER","REMEMBER","KNOW","UNDERSTAND","UNDERSTAND","UNDERSTAND","UNDERSTAND","KNOW","KNOW","UNDERSTAND","KNOW","KNOW","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","BE ABLE","KNOW","KNOW","KNOW","KNOW","KNOW","FIND OUT","FIND OUT","FIND OUT","FIND OUT","FIND OUT","FIND OUT","FIND OUT","KNOW","FIND OUT","UNDERSTAND","UNDERSTAND","UNDERSTAND","UNDERSTAND","SEE","SEE","SEE","SEE","SEE","SEE","SEE","SEE","HEAR","HEAR","HEAR","HEAR","OBEY","OBEY","OBEY","OBEY","BELIEVE","BELIEVE","BELIEVE","BELIEVE","BELIEVE","THINK","THINK","THINK"],["41012014","40026002","41013028","42012030","43019010","40025026","42008053","46001016","41013035","43008027","41009032","42023034","41001024","43015015","43006006","41001034","43001048","41014071","43007029","44019015","44019015b","44007018","43014004","43010004","43004032","41010019","41012024","42006008","40026075","41011021","42017032","42023042","58010032","43016021","42016025","43002022","43013017","47001013","47001014","44008030","41014068","45008026","44021037","46014016","42012056","42012056b","42014006","41001040","40017016","40026061","40026040","42001022","42013011","40007018","42008019","41002004","41006005","41006054","42024031","40017012","44012014","40007020","42023007","44023034","41015045","44009030","42009011","43012009","42007037","44019034","44022029","42001022b","40013051","40017013","40016012","40002010","41007002","41011013","41008023","41013026","43005006","43004019","44012003","43019008","42015025","40013019","40013023","41001027","51003020","60003006","42008025","43004050","43011027","43020008","44015011","44009026","43011013","40020010","43020015"],["And when they came, they said to him, \"Teacher, we know that you are truthful and ˻ you do not care what anyone thinks ˼, ˻ because you do not regard the opinion of people ˼ but teach the way of God in truth. Is it permitted to pay taxes to Caesar o","\"You know that after two days the Passover takes place, and the Son of Man will be handed over in order to be crucified.\"","\"Now learn the parable from the fig tree : Whenever its branch has already become tender and puts forth its leaves, you know that summer is near.","For all the nations of the world seek after these things, and your Father knows that you need these things.","So Pilate said to him, \"Will you not speak to me? Do you not know that I have authority to release you, and I have authority to crucify you?\"","But his master answered and said to him, ‘ Evil and lazy slave! You knew that I reap where I did not sow and gather from where I did not scatter seed.","And they began laughing at him, because they knew that she was dead.","(Now I also baptized the household of Stephanus. Beyond that I do not know if I baptized anyone else.)","Therefore be on the alert, for you do not know when the master of the house is coming — whether in the evening, or at midnight, or when the rooster crows, or early in the morning —","(They did not know that he was speaking to them about the Father.)","But they did not understand the statement, and they were afraid to ask him.","〚 But Jesus said, \"Father, forgive them, for they do not know what they are doing.\" 〛 And they cast lots to divide his clothes.","saying, \"˻ Leave us alone ˼, Jesus the Nazarene! Have you come to destroy us? I know who you are — the Holy One of God!\"","No longer do I call you slaves, because the slave does not know what his master is doing. But I have called you friends, because everything that I have heard from my Father I have revealed to you.","(Now he said this to test him, because he knew what he was going to do.)","And he healed many ˻ who were sick ˼ with various diseases and expelled many demons. And he did not permit the demons to speak, because they knew him.","Nathanael said to him, \"From where do you know me?\" Jesus answered and said to him, \"Before Philip called you, when you were under the fig tree, I saw you.\"","And he began to curse and to swear with an oath, \"I do not know this man whom you are talking about!\"","I know him, because I am from him and he sent me.\"","But the evil spirit answered and said to them, \"Jesus I know, and Paul I am acquainted with, but who are you?\"","But the evil spirit answered and said to them, \"Jesus I know, and Paul I am acquainted with, but who are you?\"","until another king arose over Egypt who did not know Joseph.","And you know the way where I am going.\"","Whenever he sends out all his own, he goes before them, and the sheep follow him because they know his voice.","But he said to them, \"I have food to eat that you do not know about.\"","You know the commandments : ‘ Do not murder, do not commit adultery, do not steal, do not give false testimony, do not defraud, honor your father and mother. ’\"","Jesus said to them, \"Are you not deceived because of this, because you do not know the scriptures or the power of God?","But he knew their thoughts and said to the man who had the withered hand, \"Get up and stand in the middle,\" and he got up and stood there.","And Peter remembered the statement Jesus had said, \"Before the rooster crows, you will deny me three times,\" and he went outside and wept bitterly.","And Peter remembered and said to him, \"Rabbi, look! The fig tree that you cursed has withered!\"","Remember Lot’s wife!","And he said, \"Jesus, remember me when you come into your kingdom!\"","But remember the former days in which, after you were enlightened, you endured a great struggle with sufferings,","A woman, when she gives birth, experiences pain because her hour has come. But when her child is born, she no longer remembers the affliction, on account of the joy that a human being has been born into the world.","But Abraham said, ‘ Child, remember that you received your good things during your life, and Lazarus likewise bad things. But now he is comforted here, but you are suffering pain.","So when he was raised from the dead, his disciples remembered that he had said this, and they believed the scripture and the saying that Jesus had spoken.","If you understand these things, you are blessed if you do them.","For we are not writing anything else to you except what you can read or also understand. But I hope that you will understand ˻ completely ˼,","just as you have also understood us in part, that we are your reason for boasting, just as you are also ours in the day of our Lord Jesus.","So Philip ran up to itand heard him reading aloud Isaiah the prophet and said, \"So then, do you understand what you are reading?\"","But he denied it, saying, \"I neither know nor understand what you mean!\" And he went out into the gateway, and a rooster crowed.","And likewise also, the Spirit helps us in our weakness, for we do not know how to pray as one ought, but the Spirit himself intercedes for uswith unexpressed groanings.","And as he was about to be brought into the barracks, Paul said to the military tribune, \"Is it permitted for me to say something to you?\" And he said, \"Do you know Greek?","For otherwise, if you praise in your spirit, how will the one who fills the place of the outsider say the \"amen\" at your thanksgiving, because he does not know what you are saying?","Hypocrites! You know how to evaluate the appearance of the earth and the sky, but how is it you do not know how to evaluate this present time?","Hypocrites! You know how to evaluate the appearance of the earth and the sky, but how is it you do not know how to evaluate this present time?","And they were not able to make a reply to these things.","And a leper came to him, entreating him and kneeling down and saying to him, \"If you are willing, you are able to make me clean.\"","And I brought him to your disciples, and they were not able to heal him.\"","and said, \"This man said, ‘ I am able to destroy the temple of God and rebuild it within three days. ’\"","And he came to the disciples and found them sleeping, and he said to Peter, \"So, were you not able to stay awake with me one hour?","And when he came out he was not able to speak to them, and they realized that he had seen a vision in the temple. And he kept making signs to them, and remained unable to speak.","And behold, a woman was there who had a spirit ˻ that had disabled her ˼ for eighteen years, and she was bent over and not able to straighten herself up completely.","A good tree is not able to produce bad fruit, nor a bad tree to produce good fruit.","Now his mother and brothers came to him, and they were not able to meet with him because of the crowd.","And when they were not able to bring him to him because of the crowd, they removed the roof where he was. And after digging through, they lowered the stretcher on which the paralytic was lying.","And he was not able to do any miracle in that place except to lay his hands on a few sick peopleand heal them.","And as they were getting out of the boat, people recognized him immediately.","And their eyes were opened, and they recognized him, and he became invisible to them.","But I say to you that Elijah has already come, and they did not recognize him, but did with him whatever they wanted. In the same way also the Son of Man is going to suffer at their hands.\"","And recognizing Peter’s voice, because of her joy she did not open the gate, but ran in and announced that Peter was standing at the gate.","As a result, you will recognize them by their fruits.","And when he found out that he was from the jurisdiction of Herod, he sent him over to Herod, who was also in Jerusalem in those days.","So after reading the letter and asking what province he was from, and learning that he was from Cilicia,","And when he learned of it from the centurion, he granted the corpse to Joseph.","And when the brothers found out, they brought him down to Caesarea and sent him away to Tarsus.","But when the crowds found out, they followed him, and welcoming them, he began to speak to them about the kingdom of God, and he cured those who had need of healing.","Now the large crowd of Jews found out that he was there, and they came, not only because of Jesus, but so that they could see Lazarus also, whom he raised from the dead.","And behold, a woman in the town who was a sinner, when she learned that he was dining in the Pharisee’s house, brought an alabaster flask of perfumed oil,","But when they recognized that he was a Jew, they were shouting with one voice from all of them for about two hours, \"Great is Artemis of the Ephesians!\"","Then immediately those who were about to examine him kept away from him, and the military tribune also was afraid when he realized that he was a Roman citizen and that ˻ he had tied him up ˼.","And when he came out he was not able to speak to them, and they realized that he had seen a vision in the temple. And he kept making signs to them, and remained unable to speak.","\"Have you understood all these things?\" They said to him, \"Yes.\"","Then the disciples understood that he had spoken to them about John the Baptist.","Then they understood that he did not say to beware of the leaven of bread, but of the teaching of the Pharisees and Sadducees.","Now when they saw the star, they rejoiced with very great joy.","And they saw that some of his disciples were eating their bread with unclean — that is, unwashed — hands.","And when he saw from a distance a fig tree that had leaves, he went to see if perhaps he would find anything on it. And when he came up to it he found nothing except leaves, because it was not the season for figs.","And he took hold of the blind man’s hand and led him outside the village, and after spitting in his eyes, he placed his hands on him and asked him, \"Do you see anything?\"","And then they will see the Son of Man arriving in the clouds with great power and glory.","Jesus, when he saw this one lying there and knew that he had been sick a long time already, said to him, \"Do you want to become well?\"","The woman said to him, \"Sir, I see that you are a prophet.","And when he saw that it was pleasing to the Jews, he proceeded to arrest Peter also. ( ˻ Now this was during the feast ˼ of Unleavened Bread. )","So when Pilate heard this statement, he was even more afraid,","\"Now his older son was in the field, and when he came and approached the house, he heard music and dancing.","When anyone hears the word about the kingdom and does not understand it, the evil one comes and snatches away what was sown in his heart. This is what was sown on the side of the path.","But what was sown on the good soil — this is the one who hears the word and understands it, who indeed bears fruit and produces, this one a hundred times as much, and this one sixty, and this one thirty.\"","And they were all amazed, so that they began to discuss with one another, saying, \"What is this? A new teaching with authority! He even commands the unclean spirits and they obey him.\"","Children, obey your parents in everything, for this is pleasing in the Lord.","like Sarah obeyed Abraham, calling him lord, whose children you have become when you do good and are not frightened with respect to any terror.","And he said to them, \"Where is your faith?\" But they were afraid and were astonished, saying to one another, \"Who then is this, that he commands even the winds and the water and they obey him?\"","Jesus said to him, \"Go, your son will live.\" The man believed the word that Jesus spoke to him, and he departed.","She said to him, \"Yes, Lord, I have believed that you are the Christ, the Son of God, who comes into the world.\"","So then the other disciple who had come to the tomb first also went in, and he saw and believed.","But we believe we will be saved through the grace of the Lord Jesus in ˻ the same ˼ way those also are.\"","And when he arrived in Jerusalem, he was attempting to associate with the disciples, and they were all afraid of him, because they did not believe that he was a disciple.","(Now Jesus had been speaking about his death, but they thought that he was speaking about ˻ real sleep ˼.)","And when the first came, they thought that they would receive more, and they also received a denarius apiece.","Jesus said to her, \"Woman, why are you weeping? Who are you looking for?\" She thought that it was the gardener, and said to him, \"Sir, if you have carried him away, tell me where you have put him, and I will take him.\""],[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1],[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,4,4,4,4,4,1,1,1],[3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,5,5,5,5,5,5,5,5,5,5,5,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,4,4,4,4,4,0,0,0],[1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,4,4,4,4,4,6,6,6],[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,7,7,7,7,3,3,3,3,4,4,4,4,4,6,6,6],[0,0,0,0,0,0,0,1,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,3,3,3,3,0,0,3,0,0,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,2,2,2,2,2,2,2,2,7,7,7,7,8,8,8,8,4,4,4,4,4,6,6,6],[3,3,3,3,3,3,3,0,3,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,3,1,1,1,1,3,3,1,3,3,5,5,5,5,5,5,5,5,5,5,5,3,3,3,3,3,4,4,4,4,4,4,4,3,4,1,1,1,1,2,2,2,2,2,2,2,2,7,7,7,7,8,8,8,8,9,9,9,9,9,6,6,6]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Named8<\/th>\n      <th>Named10<\/th>\n      <th>Verse<\/th>\n      <th>Text<\/th>\n      <th>N2<\/th>\n      <th>N3<\/th>\n      <th>N4<\/th>\n      <th>N5<\/th>\n      <th>N6<\/th>\n      <th>N7<\/th>\n      <th>N8<\/th>\n      <th>N9<\/th>\n      <th>N10<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","columnDefs":[{"visible":false,"targets":[1,4,5,6,7,8,9,10,11,12]},{"className":"dt-right","targets":[4,5,6,7,8,9,10,11,12]}],"buttons":[{"extend":"colvis","columns":[0,1,4,5,6,7,8,9,10,11,12]}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="download" class="section level3">
+<h3>Download</h3>
+<p><a href="clusters.csv" download>Download the full clustering</a></p>
+</div>
+
+<br>
+<br>
+<p> <center> Anna Sjöberg, 2023 </center></p>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4,h5",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -23,7 +23,13 @@ library(knitr)
 ```
 
 
-This site contains supplementary materials to my dissertation **Knowledge predication - A semantic typology**.
+This site contains supplementary materials to my dissertation **Knowledge predication - A semantic typology** which is available <a href="https://su.diva-portal.org/smash/record.jsf?dswid=-269&pid=diva2%3A1800727&c=18&searchType=SIMPLE&language=sv&query=anna+sj%C3%B6berg&af=%5B%5D&aq=%5B%5B%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&sortOrder2=title_sort_asc&onlyFullText=false&sf=all">here</a> 
+
+The site contains:
+
+- the <a href="clusters.html">full clustering</a> of the cognition-perception-ability verses analysed, presented in chapter 5 of *Knowledge predication*
+- the <a href="dimensions.html">location of the verses</a> on the six analysed dimensions fo CMDS analysis presented in chapter 7
+- the <a href="markers.html">markers</a> correlated with these dimensions, discussed in chapter 9
 
 ---
 

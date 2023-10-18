@@ -1,0 +1,268 @@
+Marker	Language	Dimension	R	P	Ocurrences	CombinesWith	CombinesWithGloss	Function
+-an	agg	Dim1cx	-0.3492945363885528	0.00895329424873925	6	fɨfɨrɨ (6)	'know'	Aspectual
+a-	arb	Dim1cx	0.3844368962505705	0.0037574295723484786	3	Crf (1), drk (2)	'know', Motion	Aspectual
+-nie	arn	Dim1cx	-0.3528209498065223	0.008240639849595322	9	kim (9)	'know'	Aspectual
+dew	arn	Dim1cx	-0.35043195918567266	0.008717806166377092	4	kim (4)	'know'	'already'
+too	ben	Dim1cx	-0.3723364253283487	0.005121053387187617	5	jana (5)	'know'	Other
+para	ben	Dim1cx	0.77467687456733	3.931248120504666e-12	23	jana (8), boojha (9), cina (5)	know', 'understand', 'know (person)'	Modal
+bak	bvz	Dim1cx	-0.3506408728992762	0.008675142819205369	7	ozobohu (6), aa (2), bie (1)	know', 'see', 'not know'	Known marker
+-ule	bzd	Dim1cx	-0.3493341944829842	0.008944991676489428	6	su (6)	'see'	Aspectual
+-wa̱	bzd	Dim1cx	0.56063158490256	8.524559468361138e-06	14	ijche̱nuk (9), su (3), ttsé (2)	know', 'see', 'hear'	Directional
+nö	caq	Dim1cx	0.4058254896101393	0.0021120112886687096	17	akaha (17), lōn (10), elnang (4), kūö (3)	know', 'understand', 'know (person)'	Aspectual
+-'po	car	Dim1cx	0.6406725807617566	1.3771718261936316e-07	16	ukuty (16)	'know'	Aspectual
+wa	car	Dim1cx	0.5567894852312669	1.0120398025302417e-05	14	ukuty (14)	'know'	Aspectual
+-i	cbr	Dim1cx	-0.44828652927999646	0.0005984614024210469	10	’unan (9), sinan (1)	know', 'understand/think'	Aspectual
+-b	cco	Dim1cx	-0.36692736145496474	0.0058596617417307015	18	ñi (6), ngá (4), lí (2), cuíi (5), tɨɨ (1)	know', 'see', 'know', 'know (person)', 'be able'	Emphatic
+lɨ-	cco	Dim1cx	0.6563156279306701	5.3244572829852804e-08	12	ñi (4), cuíi (3), lí' (5)	know'. 'know (person', 'know'	Aspectual
+DAT	che	Dim1cx	-0.5780288501423289	3.813176935915883e-06	32	хаьа (20), вевза (11), хиира (1)	know', 'know (person)', 'understand'	Knower marker
+-taba/-rʉcʉpa	cui	Dim1cx	0.36582336247656955	0.006021380278407772	3	yaputane (1), yaitane (2)	know', 'know (person)'	'again'
+mag	cuk	Dim1cx	0.45068845844759214	0.0005544871727123276	14	ito (7), dake (7)	hear', 'see'	Modal
+-sa	cuk	Dim1cx	0.3517071486206695	0.008460204468861813	3	dake (3)	'see'	Aspectual
+-gu	cuk	Dim1cx	0.4509066939426061	0.000550640308299809	7	wisi (4), ito (1), dake (2)	know', 'hear', 'see'	Other
+-ye	cuk	Dim1cx	0.4034320103342119	0.002256896337058005	4	wisi (1), ito (2), dake (1)	know', 'hear', 'see'	Known marker
+na	cul	Dim1cx	-0.36492965491577206	0.006155141156231771	39	nahato (17), ssamo (8), mitta (7), qqui (3), jidsa (4)	know', 'not know', 'hear', 'see', 'not recognise', 	Auxiliary
+j-	cya	Dim1cx	-0.5022795824512616	9.329846212426228e-05	21	lyo (21)	'know'	Other
+ti'	cya	Dim1cx	-0.4576297358771291	0.00044333577321808884	22	lyo (21), kiya' (1)	'know', Motion	'mind, intellect'
+mi	dis	Dim1cx	-0.3885406605363464	0.0033739942914048455	20	thi (20), phu (1)	know', 'be able', 	Other
+wɔ-	dts	Dim1cx	-0.5151707469889492	5.707579368400872e-05	15	igii (13), inɛɛ (1), jugɔ (1)	know', 'not know', 'realise'	Auxiliary
+-ela	eus	Dim1cx	0.6005771709738222	1.2515219994642332e-06	11	jakin (5), jabetu (5), konturatu (1)	know', 'realise', Other	Known marker
+-i’y	hop	Dim1cx	-0.7285682978426687	2.879075727629447e-10	24	navot (10), tuwa (14)	hear', 'see'	Other
+meg-	hun	Dim1cx	0.6493515080924146	8.183406561952517e-08	14	tud (7), ismer (2), ért (5)	know', 'know (person)', 'understand'	Aspectual
+-ta	ibo	Dim1cx	-0.41207812551217626	0.0017718296129914653	36	ma (30), ghọ (5), ju (1)	'know', Motion, Other	Aspectual
+-zu	ibo	Dim1cx	0.3676529195587479	0.005755461138432633	8	ma (8)	'know'	Aspectual
+to	jpn	Dim1cx	0.615029226533859	5.8521674869348e-07	8	shiru (3), wakaru (2), satoru (3)	know', 'understand', 'realise'	Known marker
+noda	jpn	Dim1cx	0.35489198806597044	0.007845513190142536	2	satoru (2)	'realise'	Known marker
+DAT	kan	Dim1cx	-0.47009179589410094	0.00029312237818815775	30	tiśi (20), gottu (8), artha (2)	know', 'know', 'understand' 	Knower marker
+ge	khk	Dim1cx	0.3820029579669828	0.004002582350417892	7	med (5), oilgoh (1), tani (1)	know', 'understand', 'know (person)'	Known marker
+cwur	kor	Dim1cx	0.40728242006580057	0.002027930161307547	16	알다 (12), 깨닫다 (3), 듣다 (1)	know', 'understand', 'hear'	Known marker
+-ur	kor	Dim1cx	0.3776940291494264	0.004471329939628501	10	알다 (7), 깨닫다 (3)	know', 'understand'	Known marker
+-in	kor	Dim1cx	0.4492718630465896	0.0005800543352513872	6	알다 (5), 깨닫다 (1)	know', 'understand'	Known marker
+re	kqc	Dim1cx	0.3485778894231969	0.009104482927728934	12	adari ufate (1), ve (9), neide (1), baku (1)	understand', 'see', 'hear', Other	Auxiliary
+PFV	kss	Dim1cx	0.38441508878319075	0.003759565862583639	9	sina (6), saaluŋ (3)	know', 'realise'	Aspectual
+da-	mfh	Dim1cx	0.3803480629956928	0.004177220406706694	5	səl (1), tsən (4)	know', 'hear'	Aspectual
+NONSUBJ	mhi	Dim1cx	0.38771533096379623	0.003448203893895298	4	ni (1), eri (2), oce (4), esu (1)	know', 'hear', 'say', 'find'	Knower marker
+-ac	mur	Dim1cx	0.4990304594451346	0.00010527621598025629	7	ga (7)	'know'	Directional
+kɔ/vɔ	mur	Dim1cx	0.3592790868787932	0.007062583003630182	5	ga (1), zii (3), cin (1)	know', 'hear', 'see'	Motion
+-døø	mxp	Dim1cx	0.385656892119932	0.00363961060133019	4	nɨja̱'wɨ (2), ja̱'gyukɨ (2)	know', 'understand'	Other
+-a	nhr	Dim1cx	-0.8229186363760728	1.2753276470187427e-14	29	q'ãa (19), c'úù (10)	know', 'not know'	Other
+hãa	nhr	Dim1cx	-0.6536546882572977	6.282946713413612e-08	23	q'ãa (14), c'úù (9)	know', 'not know'	Aspectual
+olpepei	ong	Dim1cx	0.4459475947559114	0.0006442870159784803	5	retai (3), ingitei (1), ulu (1)	know', 'hear', 'see'	Knower marker
+ausk	pdc	Dim1cx	0.428897139707078	0.0010861881496319354	6	funn (6)	'find'	Directional
+qo-	plg	Dim1cx	0.3564842549478787	0.007553038736589195	2	ỹáte (1), ateto (1)	know', 'know (person)'	Other
+-PFV	pua	Dim1cx	0.3908227752512227	0.003176096918592154	7	míte (2), jánhaska (2), kurha (2), jurhena (1)	know', 'understand', 'hear', 'know how'	Aspectual
+-pa	roo	Dim1cx	-0.6617193274711441	3.785127166062039e-08	34	tarai (27), pasi (1), roroio (1), uvui (1), evei (5), keke (1)	know', Other, 'understand', 'be able', 'recognise'	Aspectual
+AUX	sja	Dim1cx	-0.6981483221818048	3.1241841041938937e-09	29	k'awa (29)	'know'	Auxiliary
+-a	sja	Dim1cx	0.6053057300675048	9.7998798372213e-07	12	k'awa (12)	'know'	Aspectual
+få	swe	Dim1cx	0.4237102039691761	0.0012665061282514012	7	veta (4), reda (3)	'know', Other	Modal
+a-s	taq	Dim1cx	0.35035062589147525	0.00873446483768171	12	ĕssan (4), ĕfham (2), ĕlmăd (4), ĕsla (2)	know', 'understand', 'know', 'hear'	Known marker
+ato	tby	Dim1cx	0.5143745984704005	5.8868466791191495e-05	12	nako (9), sahe (1), isen (2)	know', 'understand', 'hear'	Known marker
+-un	teo	Dim1cx	0.45750376726387976	0.0004451581928167485	14	jen (14)	'know'	Directional
+-ut	teo	Dim1cx	0.5571154014793116	9.974971463474676e-06	10	jen (10)	'know'	Directional
+rəkɨs	tnn	Dim1cx	-0.371522405385052	0.005226697459153403	6	ɨtun (6)	'know'	'already'
+əmot-	tnn	Dim1cx	0.4083455971148744	0.001968469034139929	3	ɨtun (3)	'know'	Aspectual
+-IMPF	tpt	Dim1cx	-0.842869268522014	7.004146352412387e-16	36	kʼatsa (15), malaqasi (9), mispa (11), lani (1)	know', 'understand', 'know (person)', Other	Aspectual
+-PFV	tpt	Dim1cx	0.8547916427774005	1.0130404997119238e-16	18	kʼatsa (9), malaqasi (3), mispa (5), pastak (1)	know', 'understand', 'know (person)', 'remember'	Aspectual
+-po	trn	Dim1cx	0.761228324634154	1.518233903655953e-11	15	echo (10), quictiora (2), imoti (3)	know', 'understand', 'know (person)'	Aspectual
+-iyor	tur	Dim1cx	-0.5491314721488036	1.4158335700571234e-05	16	bil (11), anla (2), tanı (3)	know', 'understand', 'know (person)'	Aspectual
+-ki	udu	Dim1cx	0.4979054501183976	0.00010974136604646371	25	mish (13), nyiṯẖ (6), mol (1), da/ar (5)	know', 'know (person)', 'not know', 'find out'	Directional
+gwo	udu	Dim1cx	0.5409941032608953	2.004831515501644e-05	9	mish (4), da/ar (5)	know', 'find out'	'word, meaning'
+-PFV	wal	Dim1cx	0.5393014260318362	2.1528387610551137e-05	11	er (8), akeek (3)	know', 'understand'	Aspectual
+-ö	xsu	Dim1cx	-0.4137522049243323	0.0016894791415348776	16	ta (16), hini (1)	see', 'hear'	Aspectual
+waiki	xsu	Dim1cx	-0.3755108182105135	0.004726770255651349	5	ta (5)	'see'	'already'
+-pa	xsu	Dim1cx	0.3714119125031943	0.005241183687312757	2	pi ku (2)	'realise/think'	Aspectual
+-lo	xsu	Dim1cx	0.3714119125031943	0.005241183687312757	2	pi ku (2)	'realise/think'	Emphatic
+SIT	yle	Dim1cx	-0.6696663493615305	2.2625266099166522e-08	19	lama (19)	'know'	Auxiliary
+POSS	yle	Dim1cx	-0.713236975262818	9.947571449040266e-10	24	lama (23), nt:anê (1)	'know', Other	Auxiliary
+-të	yuz	Dim1cx	0.41607979953809615	0.001580664131812202	3	huëshë (3)	'hear'	Other
+duam	arn	Dim1lex	0.4191614379738168	0.0014462503486563864	9	ngüne (8), raki (1)	Motion, 'count'	'mind, intellect'
+-le	bvz	Dim1lex	0.42265398778212454	0.001306355751953889	4	ozobohu (1), vabi (3), bi (1)	know', 'not know', 'not know'	Aspectual
+vi	bvz	Dim1lex	0.37493173567855176	0.0047966405086351535	2	Ozobohu (2)	'know'	Directional
+é̱na	bzd	Dim1lex	0.8092823043015747	7.583401528656878e-14	16	a̱ne (16)	Motion	Body-part
+elnang	caq	Dim1lex	0.5130738511911859	6.190905235219915e-05	7	akaha (7)	'know'	Body-part
+-ng	cco	Dim1lex	0.6950225976329334	3.925641965838611e-09	8	ngá (8)	'see'	Other (Animate obj.)
+NC	che	Dim1lex	0.3461484347094058	0.009633607917536669	2	кхетa (2)	'understand'	Other
+cai²	cmn	Dim1lex	0.37493173567855176	0.0047966405086351535	2	xiao³de² (1), ming²bai (1)	understand', 'understand'	Emphatic
+-be	ctu	Dim1lex	0.5913101943590579	1.998608564796257e-06	7	ña'tyan (1), ch'ʌm (5), ubi (1)	understand/think', Other, 'hear'	Other
+-'en	ctu	Dim1lex	0.3944588617910142	0.00288196743424944	5	ch'ʌm (5)	Other	Other
+-s	cuk	Dim1lex	0.4232466645211943	0.0012838586686242167	6	ito (5), dake (1)	hear', 'see'	Aspectual
+-hissa	cul	Dim1lex	0.4323346405405432	0.0009797537101764661	2	mitta (2)	'hear'	Other
+-nissa	cul	Dim1lex	0.5212674281085533	4.4924785337364806e-05	5	mitta (5)	'hear'	Other
+-ma	cul	Dim1lex	0.37493173567855176	0.0047966405086351535	2	bodi huato (2)	'realise'	Other
+bodi	cul	Dim1lex	0.37493173567855176	0.0047966405086351535	2	huato (2)	Other	Body-part
+cunta	cya	Dim1lex	0.5406531788405637	2.0338629266860062e-05	11	ki'ya (11)	Motion	'meaning, word'
+cha' tiyaa	cya	Dim1lex	0.5186783641388031	4.9759921246431424e-05	3	ki'ya (3)	Motion	'mind, intellect'
+agejà	dgr	Dim1lex	0.37493173567855176	0.0047966405086351535	2	yenıedì (2)	'understand'	Motion
+da	dje	Dim1lex	0.7825185717063965	1.7119117827705071e-12	7	faham (7)	'understand'	Known marker
+kanra	dts	Dim1lex	0.4320128805420723	0.0009893024850245306	2	paamaa (2)	'understand'	Auxiliary
+ntɨɨriveŋ	geb	Dim1lex	0.4797015035677119	0.00021073496658134677	3	kaŋgi (3)	'know'	Other
+-i	huu	Dim1lex	0.5185544562885648	5.000290802364752e-05	3	caca (3)	'hear'	Emphatic
+-ta	jpn	Dim1lex	0.5387009466297955	2.207726464050354e-05	9	shiru (3), wakaru (2), satoru (4)	know', 'understand', 'realise'	Aspectual
+-kośśu	kan	Dim1lex	0.5801976749834892	3.438064644217281e-06	10	tiśi (4), artha (5), grahi (1)	know', 'meaning', Motion	Auxiliary
+-māḍi	kan	Dim1lex	0.6288546750603142	2.7267578981159664e-07	5	artha (5)	'meaning'	Auxiliary
+-āgu	kan	Dim1lex	0.4320128805420723	0.0009893024850245306	2	artha (2)	'meaning'	Auxiliary
+pɛŋgu	kss	Dim1lex	0.6275365679168328	2.937426505414687e-07	12	sina (12)	'know'	Other
+gij	mej	Dim1lex	0.7484298062424308	5.07279312564441e-11	13	odou (13), ebriyi (13)	'understand'	Other
+odou	mej	Dim1lex	0.7291026197005065	2.7531772669148466e-10	14	ejginaga (1), ebriyi (13)	'know', Motion	Body-part
+-aŋ	mfh	Dim1lex	0.5197821983794002	4.764274051711583e-05	4	tsən (4)	'hear'	Other
+ehwi	mhi	Dim1lex	0.3820412922916038	0.003998614462395994	2	eri (2)	'hear'	'word, meaning'
+ni	mhi	Dim1lex	0.3820412922916038	0.003998614462395994	2	eri (2)	'hear'	Emphatic
+nɨ-	mxp	Dim1lex	0.47999233309470335	0.00020860906756091434	4	madø (4)	'hear'	Other
+-wxe³	nab	Dim1lex	0.6898580304912287	5.6893982269726004e-09	12	ã³ne³ (12)	'know'	Other
+ire	ong	Dim1lex	0.5185544562885648	5.000290802364752e-05	3	ironom (1), wouye (2)	not know', 'not know'	Other
+-guet	plg	Dim1lex	0.4323346405405432	0.0009797537101764661	2	ỹáte (2)	'know'	Directional
+-ngu	pua	Dim1lex	0.7803209181827975	2.168447544059962e-12	8	kurha (8)	'hear'	Other
+-PROG	pua	Dim1lex	0.4367905879718308	0.0008557720607955955	2	jánhaska (1), kurha (1)	understand', 'hear'	Aspectual
+na	rop	Dim1lex	0.3593009034127169	0.00705886642967457	3	sabi (3)	'know'	Aspectual
+apotu	teo	Dim1lex	0.4323346405405432	0.0009797537101764661	2	jen (2)	'know'	Auxiliary
+k̄hêā	tha	Dim1lex	0.7876092374248305	9.796035384443723e-13	9	rū̂ (1), cı (8)	'know', Motion	Body-part
+echemcho	trn	Dim1lex	0.6774510727012693	1.3458850479011813e-08	11	echo (11)	'know'	Other
+’ban	udu	Dim1lex	0.6886455333226424	6.200432056093459e-09	8	mish (7), mol (1)	know', 'not know'	Body-part
+-DAT	wal	Dim1lex	0.546974012104869	1.5539895859041004e-05	3	akeek (1), gel (2)	'understand', Motion	Knower marker
+totia	xsu	Dim1lex	0.4510167177273742	0.0005487100729164999	3	ta (2), hini (1)	see', 'hear'	Emphatic
+-y	agg	Dim2	0.680781652888182	1.0725153932728214e-08	4	fɨfɨrɨ (1), hɨmborɨ (3)	know'. 'hear'	Other
+-ia	cbr	Dim2	0.4402886732386735	0.0007685446467206089	4	’unan (2), cua (2)	know', 'hear'	Known marker
+de²	cmn	Dim2	0.4209787278169673	0.0013718690344745879	2	xiao³ (2)	'understand'	Modal
+-d-ye	cuk	Dim2	0.4324627041209762	0.0009759763199090771	2	wisi (2)	'know'	Known marker
+ghǫ	dgr	Dim2	0.5450964379904268	1.684269592540499e-05	3	ıìkw'o (3)	'hear'	Known marker
+gaa	dje	Dim2	0.3904457210346922	0.0032080677642345023	2	bay (2)	'know'	Known marker
+-chʉ	gvc	Dim2	0.5134403413235975	6.103806972091167e-05	12	masi (7), tʉho (3), ñʉ (2)	know', 'hear', 'see'	Known marker
+-dg-ACC	khk	Dim2	0.3881079468632824	0.0034127237660084926	6	med (5), tani (1)	know', 'know (person)'	Known marker
+a̍	kss	Dim2	0.3904457210346922	0.0032080677642345023	2	sina (2)	'know'	Known marker
+PFV	mej	Dim2	0.43734279829942635	0.0008414352873977776	2	eg (2)	'see'	Aspectual
+-peelégue	plg	Dim2	0.46849310996241633	0.0003093741640816981	2	machi (1), quiáxa (1)	hear', 'hear'	Other
+på	swe	Dim2	0.5180941349475108	5.0915206441433084e-05	3	få (3), reda (3)	'find out'	Known marker
+-ia	teo	Dim2	0.3446845135090528	0.009965132802553888	7	jen (7)	'know'	Other
+-nö	xsu	Dim2	0.5491191490247131	1.4165893262874117e-05	3	hini (3)	'hear'	Directional
+a-	yuz	Dim2	0.4357356534209576	0.0008837738027317648	2	huëshë (2)	'hear'	Other
+-ma	agg	Dim3	0.5365322414400746	2.416910313513272e-05	2	fɨfɨrɨ (2)	'know'	Aspectual
+-rɨ	agg	Dim3	0.5316921925067875	2.951438887554281e-05	4	fɨfɨrɨ (3), türüfoa (1)	know', 'understand'	Other
+-fem	arn	Dim3	0.36638880938649016	0.005938069853635263	1	kim (1)	'know'	Aspectual
+-tu	arn	Dim3	0.609208212187265	7.984668074587601e-07	3	kim (3)	'know'	'again'
+-t'a	ayr	Dim3	0.4823112313623354	0.00019234543969040013	17	amuya (4), uñja (13)	understand/think', 'see'	Aspectual
+fa	bvz	Dim3	0.3853238732047406	0.0036714430802255163	1	ozobohu (1)	'know'	'again'
+kūö	caq	Dim3	0.6371612397888187	1.6921766299767328e-07	11	akaha (10), mikah (1)	'know'	Body-part
+wa	car	Dim3	0.47078647273531304	0.0002863056709887467	14	ukuty (14)	'know'	Aspectual
+rapa	car	Dim3	0.3853238732047406	0.0036714430802255163	1	ukuty (1)	'know'	'again'
+CAUS	che	Dim3	0.3853238732047406	0.0036714430802255163	1	вевза (1)	'know (person)'	Other
+chu¹	cmn	Dim3	0.46945016996010025	0.00029954930460599676	3	ren¼ (3)	'know (person)'	Motion
+wa'	ctu	Dim3	0.36638880938649016	0.005938069853635263	1	cʌñ (1)	'know (person)'	Other
+-e'	ctu	Dim3	0.3853238732047406	0.0036714430802255163	1	cʌñ (1)	'know (person)'	Aspectual
+yai	cui	Dim3	0.5593366352516833	9.034287233215291e-06	5	tane (5)	'see'	Other
+mag	cuk	Dim3	0.49784712259298936	0.00010997752991186483	14	ito (7), dake (7)	hear', 'see'	Modal
+-asaila	cuk	Dim3	0.36638880938649016	0.005938069853635263	1	dake (1)	'see'	Other
+-ar	cuk	Dim3	0.36638880938649016	0.005938069853635263	1	dake (1)	'see'	Other
+-de	cuk	Dim3	0.3853238732047406	0.0036714430802255163	1	dake (1)	'see'	Aspectual
+-dsa	cul	Dim3	0.4396918885256497	0.000782833827449289	4	nahato (2), jidsa (2)	know', 'not recognise'	Known marker
+tyu'wi	cya	Dim3	0.8490317208663947	2.632199108317262e-16	13	lyo (13)	'know'	Auxiliary
+ire	dgz	Dim3	0.7302042393610915	2.509883291659992e-10	7	anu (2), yawa (5)	hear', 'see'	Emphatic
+egin	eus	Dim3	0.3853238732047406	0.0036714430802255163	1	ezagutu (1)	'know (person)'	Auxiliary
+-ra	geb	Dim3	0.36638880938649016	0.005938069853635263	1	garav (1)	'see'	Other
+fel-	hun	Dim3	0.474786657197932	0.0002497816156089297	7	ismer (7)	'know (person)'	Directional
+-zu	ibo	Dim3	0.3584673796180736	0.007202080398687167	8	ma (8)	'know'	Aspectual
+kom	icr	Dim3	0.3853238732047406	0.0036714430802255163	1	nuo (1)	'know'	Auxiliary
+fi	icr	Dim3	0.3853238732047406	0.0036714430802255163	1	nuo (1)	'know'	Other
+hiḍi	kan	Dim3	0.36638880938649016	0.005938069853635263	1	gurutu (1)	'identity'	Motion
+-isu	kan	Dim3	0.41871393506751714	0.0014651116372892676	3	gurutu (2), grahi (1)	'identity', Motion	Other
+-pe	kgk	Dim3	0.5365322414400746	2.416910313513272e-05	2	kwaa (2)	know', 'be able'	Known marker
+-in	kor	Dim3	0.5420439165788301	1.9178233490293802e-05	6	알다 (5), 깨닫다 (1)	know', 'understand'	Known marker
+-i	kqc	Dim3	0.5136434326077586	6.056027754798176e-05	8	ve (8)	'see'	Other
+mama	kqc	Dim3	0.6086686728162041	8.215380365625411e-07	9	ve (8), neide (1)	see', 'hear'	Emphatic
+re	kqc	Dim3	0.4897065918505884	0.0001478989869018751	12	adari ufate (1), ve (9), neide (1), baku (1)	understand', 'see', 'hear', Other	Auxiliary
+angam	mic	Dim3	0.36638880938649016	0.005938069853635263	1	nenu (1)	'know (person)'	Other
+-ka̱	mxp	Dim3	0.6509766651745705	7.409736168865799e-08	7	ejx (7)	'see'	Other
+-tøø	mxp	Dim3	0.3853238732047406	0.0036714430802255163	1	ejx (1)	'see'	Other
+-kxi²	nab	Dim3	0.36638880938649016	0.005938069853635263	1	ĩ² (1)	'see'	Other
+-O	ong	Dim3	0.6379514561523687	1.6158907199721186e-07	26	retai (16), iro (1), matufu (3), ingitei (4), ulu (2)	know', Other, 'recognise', 'hear', 'see'	Known marker
+-ye	ong	Dim3	0.3853238732047406	0.0036714430802255163	1	matufu (1)	'recognise'	Emphatic
+ỹímta	plg	Dim3	0.3853238732047406	0.0036714430802255163	1	ateto (1)	'know (person)'	Auxiliary
+-nta	pua	Dim3	0.609208212187265	7.984668074587601e-07	3	míte (3)	'know'	Other
+-curi	qub	Dim3	0.3853238732047406	0.0036714430802255163	1	tantiya (1)	'understand'	Aspectual
+ata	sja	Dim3	0.36638880938649016	0.005938069853635263	1	k'awa (1)	'know'	Auxiliary
+igen	swe	Dim3	0.7646297245231212	1.0879151352023305e-11	6	känna (6)	'know (person)'	'again'
+ad-	taq	Dim3	0.36638880938649016	0.005938069853635263	1	ĕzzăy (1)	'know (person)'	Emphatic
+-cạk	tha	Dim3	0.45877048240323304	0.0004271376015651838	10	rū̂ (10)	'know'	Other
+dị̂	tha	Dim3	0.6739714385033706	1.7008870584759378e-08	4	rū̂ (1), cả (3)	know', 'recognise'	Auxiliary
+-ma	xsu	Dim3	0.4441224431713573	0.000682222166838308	6	ta (4), pi ku (2)	know', 'realise/think'	Aspectual
+soa	xsu	Dim3	0.5365322414400746	2.416910313513272e-05	2	ta (2)	'see'	Aspectual
+-ta	xsu	Dim3	0.5365322414400746	2.416910313513272e-05	2	ta (2)	'see'	Aspectual
+-lö-la	xsu	Dim3	0.36638880938649016	0.005938069853635263	1	ta (1)	'see'	Other
+kõo	xsu	Dim3	0.3853238732047406	0.0036714430802255163	1	ta (1)	'see'	'again'
+duam	arn	Dim4	0.6163122201065263	5.460190086483973e-07	9	ngüne (8), raki (1)	Motion, 'count'	'mind, intellect'
+vi	bvz	Dim4	0.36295815260195274	0.006459438263348091	2	Ozobohu (2)	'know'	Directional
+quixun	cbr	Dim4	0.48575111041550334	0.00017034315813190914	21	’unan (14), sinan (3), cua (4)	know', 'understand/think', 'hear'	Known marker
+cai²	cmn	Dim4	0.36295815260195274	0.006459438263348091	2	xiao³de² (1), ming²bai (1)	understand', 'understand'	Emphatic
+-taba/-rʉcʉpa	cui	Dim4	0.3576509938209805	0.007344798272329363	3	yaputane (1), yaitane (2)	know', 'know (person)'	'again'
+-d	cuk	Dim4	0.41167825934423613	0.0017920221514142348	11	wisi (9), ito (2)	know', 'hear'	Knower marker
+-sa	cuk	Dim4	0.4479728487992761	0.0006044311063180585	3	dake (3)	'see'	Aspectual
+-ma	cul	Dim4	0.36295815260195274	0.006459438263348091	2	bodi huato (2)	'realise'	Other
+bodi	cul	Dim4	0.36295815260195274	0.006459438263348091	2	huato (2)	Other	Body-part
+agejà	dgr	Dim4	0.36295815260195274	0.006459438263348091	2	yenıedì (2)	'understand'	Motion
+mai	dis	Dim4	0.374715181604236	0.004823001470953623	22	thar (21), bao (1)	'find', Other	Emphatic
+kaŋ	dje	Dim4	0.39685030055385906	0.0027019350822202605	20	bay (15), faham (4), du (1), di (1)	know', 'understand', 'be able', 'see'	Known marker
+-ela	eus	Dim4	0.5708105347700859	5.353902853186264e-06	11	jakin (5), jabetu (5), konturatu (1)	know', 'realise', Other	Known marker
+-tu	gvc	Dim4	0.3741656411201554	0.0048904688513184	2	masi (1), tʉho (2)	know', 'hear'	Other
+ni	gvc	Dim4	0.3741656411201554	0.0048904688513184	2	masi (1), tʉho (2)	know', 'hear'	Knower marker
+to	jpn	Dim4	0.5110804830421748	6.684975416364126e-05	8	shiru (3), wakaru (2), satoru (3)	know', 'understand', 'realise'	Known marker
+noda	jpn	Dim4	0.48287303731472503	0.00018858345970045346	2	satoru (2)	'realise'	Known marker
+-du	kan	Dim4	0.3454596315380063	0.009788387813101389	4	tiśi (4)	'know'	Other
+S.COMP.NOM	khk	Dim4	0.4083925797602373	0.0019658776353528432	5	med (2), oilgoh (2), uhara (1)	know', 'understand', 'realise'	Known marker
+ge	khk	Dim4	0.468353076686975	0.00031083601318201027	7	med (5), oilgoh (1), tani (1)	know', 'understand', 'know (person)'	Known marker
+-j	khk	Dim4	0.4168436129162065	0.0015463466869936888	1	oilgoh (1)	'understand'	Known marker
+cwur	kor	Dim4	0.5607416680817776	8.482482032461089e-06	16	알다 (12), 깨닫다 (3), 듣다 (1)	know', 'understand', 'hear'	Known marker
+-ur	kor	Dim4	0.37108889754543106	0.005283734942766494	10	알다 (7), 깨닫다 (3)	know', 'understand'	Known marker
+.DET	kor	Dim4	0.4168436129162065	0.0015463466869936888	1	듣다 (1)	'hear'	Known marker
+kà	mfh	Dim4	0.5581819854759504	9.512488280346572e-06	16	səl (12), tsən (3), dzugw (1)	know', 'hear', 'understand/think'	Known marker
+-ac	mur	Dim4	0.44698041552924417	0.0006236744296170688	7	ga (7)	'know'	Directional
+kò	nhr	Dim4	0.3743503486828855	0.004867700277657981	8	q'ãa (7), c'úù (1), kóḿ (1), bóò (4)	know', 'not know', 'hear', 'see'	Aspectual
+-n	plg	Dim4	0.47312625040465633	0.0002643932663090433	39	ỹáte (24), ateto (15)	know', 'know (person)'	Aspectual
+qo-	plg	Dim4	0.5003504943725418	0.0001002495726855342	2	ỹáte (1), ateto (1)	know', 'know (person)'	Other
+-PFV	pua	Dim4	0.46910650960215905	0.00030304407349374866	7	míte (2), jánhaska (2), kurha (2), jurhena (1)	know', 'understand', 'hear', 'know how'	Aspectual
+-nhera	pua	Dim4	0.4168436129162065	0.0015463466869936888	1	jánhaska (1)	'understand'	Other
+əmot-	tnn	Dim4	0.4163990633254715	0.0015662379317802244	3	ɨtun (3)	'know'	Aspectual
+-PFV	wal	Dim4	0.58501425051526	2.724412372250635e-06	11	er (8), akeek (3)	know', 'understand'	Aspectual
+-pa	xsu	Dim4	0.47512639408264773	0.0002468841155963807	2	pi ku (2)	'realise/think'	Aspectual
+-lo	xsu	Dim4	0.47512639408264773	0.0002468841155963807	2	pi ku (2)	'realise/think'	Emphatic
+öpö-so-ma	xsu	Dim4	0.4168436129162065	0.0015463466869936888	1	pi ku (1)	'realise/think'	Emphatic
+pi	xsu	Dim4	0.44134766135158376	0.0007437663539091452	5	hatuku (1), ku (4)	'say'	Body-part
+-të	yuz	Dim4	0.4663847823258269	0.0003320589745805186	3	huëshë (3)	'hear'	Other
+-m	bvz	Dim5	-0.3667588532728673	0.00588409694231505	10	ozobohu (2), aa (1), bie (4), vabi (3), bi (1), gago (1)	know', 'see', 'not know', 'not know', 'not know', Other	Known marker
+NC	cbr	Dim5	-0.4819250328357541	0.0001949710941435864	2	’unan (2)	'know'	Other
+yabara	cui	Dim5	-0.39638658221384865	0.0027360438298128075	3	yaputane (2), nanta xeina (1)	know', 'understand/think'	Known marker
+aku*	cuk	Dim5	-0.4799503085875179	0.0002089150435783323	7	ito (3), dake (4)	hear', 'see'	Modal
+-de	cul	Dim5	-0.5082915517133271	7.437165599694299e-05	3	nahato (1), ssamo (2)	know', 'not know', 'hear', 'see', 'not recognise', 	Known marker
+nıìle*	dgr	Dim5	-0.4492541673721216	0.0005803803435871301	7	yek'èezǫ (6), yedaadı (1)	know', 'know'	Emphatic
+-htore	gvc	Dim5	-0.5175865289015033	5.193895792057355e-05	1	masi (1)	'know'	Known marker
+INF	hun	Dim5	-0.4819250328357541	0.0001949710941435864	2	tud (2)	'know'	Known marker
+-ru	jpn	Dim5	-0.5082915517133271	7.437165599694299e-05	3	shiru (3)	'know'	Known marker
+INF	kan	Dim5	-0.4819250328357541	0.0001949710941435864	2	tiśi (1), sādhya (1)	know', 'be able'	Known marker
+põra	kgk	Dim5	-0.5175865289015033	5.193895792057355e-05	1	arandu (1)	'know how'	Emphatic
+-ci	kor	Dim5	-0.4897150576125464	0.00014785399721097415	3	알다 (3)	'know'	Known marker
+kpe	mhi	Dim5	-0.5175865289015033	5.193895792057355e-05	1			Verbal morphology
+-mi	nuy	Dim5	-0.5175865289015033	5.193895792057355e-05	1	marrbuy (1)	'know'	Other
+ire	ong	Dim5	-0.3569903239983159	0.007462092125631607	9	retai (2), ironom (5), wouye (2)	know', 'not know', 'not know'	Knower marker
+asi-	ong	Dim5	-0.5175865289015033	5.193895792057355e-05	1	ironom (1)	'not know'	Known marker
+-HAB	pua	Dim5	-0.4119146343239003	0.0017800609531023024	3	míte (1), jánhaska (1), ú (1)	know', 'understand', 'be able', 'see'	Habitual
+manami	qub	Dim5	-0.48845742068042236	0.00015467632314780067	9	musya (5), tantiya (2), rejsi (2)	know', 'understand', 'know (person)'	Other
+-S	taq	Dim5	-0.5175865289015033	5.193895792057355e-05	1	indăr (1)	'not be able'	Knower marker
+ad-	taq	Dim5	-0.5175865289015033	5.193895792057355e-05	1	indăr (1)	'not be able'	Known marker
+STEM	udu	Dim5	-0.5175865289015033	5.193895792057355e-05	1	mish (1)	'know'	Known marker
+-baa	wal	Dim5	-0.5558754224351802	1.0538815588273614e-05	3	er (3)	'know'	Known marker
+-i	xsu	Dim5	-0.5010980680490212	9.750137032696691e-05	5	ta (5)	'see'	Other
+-ɲɛ	yal	Dim5	-0.5175865289015033	5.193895792057355e-05	1	kolon (1)	'know'	Other
+-ña	ayr	Dim6	0.599599985247834	1.3157601488451447e-06	4	yati (4)	'know'	Known marker
+-ra	ayr	Dim6	0.5536006251633248	1.1650733596438237e-05	2	yati (2)	'know'	Other
+NC	bvz	Dim6	0.5304997881195209	3.0989038364374046e-05	1	ozo (1)	'think'	Other
+ka	dje	Dim6	0.5301179044872328	3.147549762632565e-05	3	bay (1), hin (2), du (1)	know', 'be able', 'be able'	Other
+māmatsyaṅwu	hop	Dim6	0.5304997881195209	3.0989038364374046e-05	1	māmatsi (1)	'understand'	Other
+-ballu	kan	Dim6	0.5304997881195209	3.0989038364374046e-05	1			Verbal morphology
+me	kto	Dim6	0.7039584102196411	2.027723108205507e-09	2	gima (1), agat (1)	see', 'think/remember'	Habitual
+NC	mfh	Dim6	0.5304997881195209	3.0989038364374046e-05	1	səl (1)	'know'	Other
+wa	mhi	Dim6	0.5304997881195209	3.0989038364374046e-05	1			Verbal morphology
+-ek	mur	Dim6	0.6069268716880708	9.003439565896332e-07	2	ga (2)	'know'	Directional
+-INF	pdc	Dim6	0.768457304037931	7.426689328731458e-12	3	viss (1), kann (2)	know', 'be able'	Known marker
+vi	pdc	Dim6	0.5304997881195209	3.0989038364374046e-05	1	viss (1)	'know'	Other
+-ku	pua	Dim6	0.5304997881195209	3.0989038364374046e-05	1	míte (1)	'know'	Other
+-veira	roo	Dim6	0.3595193646226916	0.007021744232707485	2	tarai (1), keke (1)	know', 'see'	Habitual
+3NS-	tby	Dim6	0.7039584102196411	2.027723108205507e-09	2	dadi (2)	'be able'	Other
+ka-	tby	Dim6	0.7039584102196411	2.027723108205507e-09	2	dadi (2)	'be able'	Known marker
+C-abil	tur	Dim6	0.7039584102196411	2.027723108205507e-09	2			Verbal morphology

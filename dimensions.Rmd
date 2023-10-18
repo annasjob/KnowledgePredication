@@ -4,8 +4,8 @@ author: "Anna Sjöberg"
 output: 
   html_document:
     theme: paper
-#    include:
-#      after_body: footer.html
+    include:
+      after_body: footer.html
     toc: true
     toc_depth: 5
     toc_float: true
@@ -19,18 +19,23 @@ library(shiny)
 ```
 
 ---
+This page presents the dimensions of knowledge predication as found by a CMDS analysis, the details of which I present in chapter 7 of *Knowledge predication*. 
 
 ### Explore the dimensions
+The dimensions of the CMDS analysis can be explored in the plot below. Use the drop-down menus to change which dimensions and which language are displayed. Hover over a point to read the verse it represents. 
+
 <iframe height="600" width="100%" frameborder="no" src="https://annasjob.shinyapps.io/viewDimensions/"> </iframe>
 ```{r tabsets, echo=FALSE} 
-#shiny::runGitHub("viewDimensions", "annasjob", ref="main")
+
 
 ```
 
+### Table of verses with dimensions
+Below is a table of the verses in the extended knowledge domain and their values in the six dimensions analysed in *Knowledge predication*. 
 
 ```{r, echo=FALSE}
 library(DT)
-df<-read.table("dimensions.csv", sep=";", header=T, encoding="UTF-8")
+df<-read.table("dimensions2.csv", sep=";", header=T, encoding="UTF-8")
 df$Dimension1 <- round(df$Dimension1, 3)
 df$Dimension2 <- round(df$Dimension2, 3)
 df$Dimension3 <- round(df$Dimension3, 3)
@@ -38,7 +43,9 @@ df$Dimension4 <- round(df$Dimension4, 3)
 df$Dimension5 <- round(df$Dimension5, 3)
 df$Dimension6 <- round(df$Dimension6, 3)
 
-datatable(data=df)
+datatable(data=df, rownames=FALSE, extensions = 'Buttons', options = list(dom = 'Bfrtip', columnDefs = list(list(visible=FALSE, targets=c(4,5,6,7,8))), buttons = list(list(extend = 'colvis', columns = c(3,4,5,6,7,8)))))
 
 ```
 
+### Download
+<a href="dimensions2.csv" download>Download the verses with values on dimensions</a>

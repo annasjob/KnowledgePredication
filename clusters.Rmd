@@ -1,0 +1,38 @@
+---
+title: "Clustering of cognition-perception-ability verses"
+author: "Anna Sjöberg"
+output: 
+  html_document:
+    theme: paper
+    include:
+      after_body: footer.html
+    toc: true
+    toc_depth: 5
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
+library(ggplot2)
+library(ggiraph)
+library(shiny)
+```
+
+---
+
+### Explore the clustering
+In the plot below, you can explore the clustering at different number of clusters. Pick the number of clusters in the drop-down menu. Each point represents a verse in the verse sample, and the colour represents the clustering at 10 clusters (as discussed in section 5.4 of *Knowledge predication*). Hover over a point to read the verse it represents.
+
+<iframe height="600" width="100%" frameborder="no" src="https://annasjob.shinyapps.io/viewClusters/"> </iframe>
+
+### The clusters
+```{r, echo=FALSE}
+library(DT)
+df<-read.table("clusters.csv", sep="\t", header=T, encoding="UTF-8")
+df <- df[, c("Named8", "Named10", "Verse", "Text", "N2", "N3", "N4", "N5", "N6", "N7", "N8", "N9", "N10")]
+
+datatable(data=df, rownames=FALSE, extensions = 'Buttons', options = list(dom = 'Bfrtip', columnDefs = list(list(visible=FALSE, targets=c(1,4,5,6,7,8,9,10, 11, 12))), buttons = list(list(extend = 'colvis', columns = c(0,1,4, 5,6,7,8,9,10, 11, 12)))))
+```
+### Download
+<a href="clusters.csv" download>Download the full clustering</a>
+
