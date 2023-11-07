@@ -1,0 +1,14 @@
+name: "Knowledge Predication Online Supplementary Materials"
+navbar:
+  title: "Knowledge Predication"
+  left:
+    - text: "Main"
+      href: index.html
+    - text: "Constructions"
+      href: languages.html
+    - text: "Dimensions"
+      href: dimensions.html
+    - text: "Markers"
+      href: markers.html
+    - text: "Clustering"
+      href: clusters.html
