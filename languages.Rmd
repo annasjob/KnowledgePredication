@@ -1,0 +1,756 @@
+---
+title: "Languages"
+output:
+  html_document:
+    theme: paper
+    include:
+      after_body: footer.html
+    toc: true
+    toc_depth: 5
+    toc_float: true
+---
+---
+
+```{r setup, include=FALSE}
+library(DT)
+library(lingtypology)
+library(pandoc)
+knitr::opts_chunk$set(echo = FALSE)
+df <- read.csv("constructions.csv", header=T, sep="\t", encoding="UTF-8")
+df_lngs <- read.csv("languages.csv", sep=";")
+
+```
+
+### North and Meso-America
+```{r}
+df_lngsb <- df_lngs[which(df_lngs$area =="North America"),]
+map.feature(languages = lang.iso(df_lngsb$lng),
+            features = df_lngsb$Type,
+            label = lang.iso(df_lngsb$lng),
+            popup = lang.iso(df_lngsb$lng)
+            )
+```
+
+#### Bribri (bzd)
+Bribri is a Chibchan language spoken by approximately 7000 people.
+
+The principal constructions for expressing knowledge predication in the Briri New Testament are found in the table below.  
+
+```{r}
+df_sub <- df[which(df$Language == "bzd"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+
+#### Comaltepec Chinantec (cco)
+Comaltepec Chinantec is a Western Otomanguean language spoken by approximately 2 000 people.
+
+The principal constructions for expressing knowledge predication in the Chinantec New Testament are found in the table below.
+
+```{r}
+df_sub <- df[which(df$Language == "cco"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+
+#### Cherokee (chr)
+Cherokee is an Iroquoian language spoken by approximately 1 520 people.
+
+The principal constructions for expressing knowledge predication in the Cherokee New Testament are found in the table below.
+
+```{r}
+df_sub <- df[which(df$Language == "chr"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+#### Chol (ctu)
+Chol is a Mayan language spoken by approximately 252 000 people.
+
+The principal constructions for expressing knowledge predication in the Chol New Testament are found in the table below.
+
+```{r}
+df_sub <- df[which(df$Language == "ctu"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+#### Nopala Chatino (cya)
+Nopala Chatino is an Eastern Otomanguean language spoken by approximately 8 940 people.
+
+The principal constructions for expressing knowledge predication in the Chatino Nopala New Testament are found in the table below.
+
+```{r}
+df_sub <- df[which(df$Language == "cya"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+#### Dogrib (dgr)
+Dogrib is an Athabaskan-Eyak-Tlingit language spoken by approximately 1 650 people.
+
+The principal constructions for expressing knowledge predication in the Dogrib New Testament are found in the table below.
+
+```{r}
+df_sub <- df[which(df$Language == "dgr"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+#### Central Alaskan Yupik (esu)
+Central Alaskan Yupik is an Eskimo-Aleut language spoken by about 10 000 people.
+
+The principal constructions for expressing knowledge predication in the Central Alaskan Yupik New Testament are found in the table below.
+
+```{r}
+df_sub <- df[which(df$Language == "esu"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Hopi (hop)
+Hopi is a Northern Uto-Aztecan language spoken by around 6 080 people.
+
+The principal constructions expressing knowledge predication in the Hopi New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "hop"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Tol (Jicaque) (jic)
+Tol (Jicaque) is a Jicaquean language spoken by around 300 people.
+
+The principal constructions expressing knowledge predication in the Tol (Jicaque) New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "jic"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+
+##### Mi'kmaq (mic)
+Mi'kmaq is an Algic language spoken by around 6 900 people.
+
+The principal constructions expressing knowledge predication in the Mi'kmaq New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "mic"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Mixe (mxp)
+Mixe is a Mixe-Zoque language spoken by around 16 800 people.
+
+The principal constructions expressing knowledge predication in the Mixe New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "mxp"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Pennsylvania German (pdc)
+Pennsylvania German is an Indo-European>Germanic/Creole language spoken by around 148 000 people.
+
+The principal constructions expressing knowledge predication in the Pennsylvania German New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "pdc"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Purepecha (pua)
+Purepecha is a Tarascan language spoken by around 180 000 people.
+
+The principal constructions expressing knowledge predication in the Purepecha New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "pua"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Tlachichilco Tepehua (tpt)
+Tlachichilco Tepehua is a Totonacan language spoken by around 3 000 people.
+
+The principal constructions expressing knowledge predication in the Tlachichilco Tepehua New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "tpt"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+### South America
+```{r}
+df_lngsb <- df_lngs[which(df_lngs$area =="South America"),]
+map.feature(languages = lang.iso(df_lngsb$lng),
+            features = df_lngsb$Type,
+            label = lang.iso(df_lngsb$lng),
+            popup = lang.iso(df_lngsb$lng)
+            )
+```
+
+##### Mapudungun (arn)
+Mapudungun is an Araucanian language spoken by around 258 410 people.
+
+The principal constructions expressing knowledge predication in the Mapudungun New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "arn"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Central Aymara (ayr)
+Central Aymara is an Aymaran language spoken by around 1 464 100 people.
+
+The principal constructions expressing knowledge predication in the Central Aymara New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "ayr"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Carib (car)
+Carib is a Cariban language spoken by around 8 558 people.
+
+The principal constructions expressing knowledge predication in the Carib New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "car"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Cashibo-Cacataibo (cbr)
+Cashibo-Cacataibo is a Pano-Tacanan language spoken by around 2 780 people.
+
+The principal constructions expressing knowledge predication in the Cashibo-Cacataibo New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "cbr"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Cuiba (cui)
+Cuiba is a Guahiboan language spoken by around 2 640 people.
+
+The principal constructions expressing knowledge predication in the Cuiba New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "cui"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### San Blas Kuna (cuk)
+San Blas Kuna is a Chibchan language spoken by around 57 100 people.
+
+The principal constructions expressing knowledge predication in the San Blas Kuna New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "cuk"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Culina (cul)
+Culina is an Arawan language spoken by around 3 420 people.
+
+The principal constructions expressing knowledge predication in the Culina New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "cul"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Kotiria (gvc)
+Kotiria is a Tucanoan language spoken by around 1 300 people.
+
+The principal constructions expressing knowledge predication in the Kotiria New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "gvc"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Murui Huitoto (huu)
+Murui Huitotois a Huitotoan language spoken by around 1000 people.
+
+The principal constructions expressing knowledge predication in the Murui Huitoto New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "huu"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### San Andres Creole English (icr)
+San Andres Creole English is an Indo-European>Germanic/Creole language spoken by around 12 000 people.
+
+The principal constructions expressing knowledge predication in the San Andres Creole English New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "icr"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Kaiwá (kgk)
+Kaiwá is a Tupian language spoken by around 18 000 people.
+
+The principal constructions expressing knowledge predication in the Kaiwá New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "kgk"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Southern Nambikuára (nab)
+Southern Nambikuára is a Nambiquaran language spoken by around 720 people.
+
+The principal constructions expressing knowledge predication in the Southern Nambikuára New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "nab"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Pilagá (plg)
+Pilagá is a Guaicuruan language spoken by around 3490 people.
+
+The principal constructions expressing knowledge predication in the Pilagá New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "plg"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Huallaga Huánuco Quechua (qub)
+Huallaga Huánuco Quechua is a Quechuan language spoken by around 40 000 people.
+
+The principal constructions expressing knowledge predication in the Huallaga Huánuco Quechua New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "qub"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Rikbaktsa (rkb)
+Rikbaktsa is a Nuclear-Macro-Je language spoken by around 40 people.
+
+The principal constructions expressing knowledge predication in the Rikbaktsa New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "rkb"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Epena (sja)
+Epena is a Chocoan language spoken by around 3 500 people.
+
+The principal constructions expressing knowledge predication in the Epena New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "sja"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Trinitario (trn)
+Trinitario is an Arawakan language spoken by around 3 140 people.
+
+The principal constructions expressing knowledge predication in the Trinitario New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "trn"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Sanumá (xsu)
+Sanumá is a Yanomamic language spoken by around 6 000 people.
+
+The principal constructions expressing knowledge predication in the Sanumá New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "xsu"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Yuracaré (yuz)
+Yuracaré is an isolate language spoken by around 1 810 people.
+
+The principal constructions expressing knowledge predication in the Yuracaré New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "yuz"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+
+### Africa
+```{r}
+df_lngsb <- df_lngs[which(df_lngs$area =="Africa"),]
+map.feature(languages = lang.iso(df_lngsb$lng),
+            features = df_lngsb$Type,
+            label = lang.iso(df_lngsb$lng),
+            popup = lang.iso(df_lngsb$lng)
+            )
+```
+
+##### Afrikaans (afr)
+Afrikaans is an Indo-European>Germanic language spoken by around 7 331 780 people.
+
+The principal constructions expressing knowledge predication in the Afrikaans New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "afr"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Hamer-Banna (amf)
+Hamer-Banna is a South Omotic language spoken by around 26 900 people.
+
+The principal constructions expressing knowledge predication in the Hamer-Banna New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "amf"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Zarma (dje)
+Zarma is a Songhay language spoken by around 4 330 100 people.
+
+The principal constructions expressing knowledge predication in the Zarma New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "dje"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Toro So Dogon (dts)
+Toro So Dogon is a Dogon language spoken by around 50 000 people.
+
+The principal constructions expressing knowledge predication in the Toro So Dogon New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "dts"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Igbo (ibo)
+Igbo is a Atlantic-Congo>Volta-Congo>Benue-Congo>Igboid language spoken by around 29 000 000 people.
+
+The principal constructions expressing knowledge predication in the Igbo New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "ibo"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Southern Kisi (kss)
+Southern Kisi is a Atlantic-Congo>Mel language spoken by around 318 000 people.
+
+The principal constructions expressing knowledge predication in the Southern Kisi New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "kss"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Matal (mfh)
+Matal is an Afro-Asiatic>Chadic language spoken by around 18 000 people.
+
+The principal constructions expressing knowledge predication in the Matal New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "mfh"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Ma'di (mhi)
+Ma'di is a Central Sudanic language spoken by around 326 000 people.
+
+The principal constructions expressing knowledge predication in the Ma'di New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "mhi"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Moro (mor)
+Moro is a Heibanic language spoken by around 72 000 people.
+
+The principal constructions expressing knowledge predication in the Moro New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "mor"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Murle (mur)
+Murle is a Surmic language spoken by around 196 000 people.
+
+The principal constructions expressing knowledge predication in the Murle New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "mur"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Naro (nhr)
+Naro is a Khoe-Kwadi language spoken by around 10 000 people.
+
+The principal constructions expressing knowledge predication in the Naro New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "nhr"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Tamasheq (taq)
+Tamasheq is an Afro-Asiatic>Berber language spoken by around 500 000 people.
+
+The principal constructions expressing knowledge predication in the Tamasheq New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "taq"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Teso (teo)
+Teso is a Nilotic language spoken by around 2 699 000 people.
+
+The principal constructions expressing knowledge predication in the Teso New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "teo"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Uduk (udu)
+Uduk is a Koman language spoken by around 22 000 people.
+
+The principal constructions expressing knowledge predication in the Uduk New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "udu"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Wolaytta (wal)
+Wolaytta is a Ta-Ne-Omotic language spoken by around 2 380 000 people.
+
+The principal constructions expressing knowledge predication in the Wolaytta New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "wal"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Yalunka (yal)
+Yalunka is a Mande language spoken by around 173 300 people.
+
+The principal constructions expressing knowledge predication in the Yalunka New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "yal"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+
+### Eurasia
+```{r}
+df_lngsb <- df_lngs[which(df_lngs$area =="Eurasia"),]
+map.feature(languages = lang.iso(df_lngsb$lng),
+            features = df_lngsb$Type,
+            label = lang.iso(df_lngsb$lng),
+            popup = lang.iso(df_lngsb$lng)
+            )
+```
+
+##### Modern Standard Arabic (arb)
+Modern Standard Arabic is an Afro-Asiatic>Semitic language spoken by around 273 989 700 people.
+
+The principal constructions expressing knowledge predication in the Modern Standard Arabic New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "arb"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Bengali (ben)
+Bengali is an Indo-European>Indo-Iranian language spoken by around 228 651 040 people.
+
+The principal constructions expressing knowledge predication in the Bengali New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "ben"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Car Nicobarese (caq)
+Car Nicobarese is an Austroasiatic>Nicobaric language spoken by around 37 000 people.
+
+The principal constructions expressing knowledge predication in the Car Nicobarese New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "caq"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Chechen (che)
+Chechen is a Nakh-Daghestanian language spoken by around 1 526 650 people.
+
+The principal constructions expressing knowledge predication in the Chechen New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "che"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Mandarin Chinese (cmn)
+Mandarin Chinese is a Sino-Tibetan>Sinitic language spoken by around 921 233 120 people.
+
+The principal constructions expressing knowledge predication in the Mandarin Chinese New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "cmn"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Dimasa (dis)
+Dimasa is a Sino-Tibetan>Brahmaputran>Bodo-Garo language spoken by around 137 000 people.
+
+The principal constructions expressing knowledge predication in the Dimasa New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "dis"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Middle English (enm)
+Middle English was an Indo-European>Germanic language spoken in England around year 1000-1500.
+
+The principal constructions expressing knowledge predication in the lngname? New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "enm"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+
+##### Basque (eus)
+Basque is a isolate language spoken by around 537 860 people.
+
+The principal constructions expressing knowledge predication in the Basque New Testament are shown in the table below.
+
+```{r}
+df_sub <- df[which(df$Language == "eus"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Hungarian (hun)
+Hungarian is an Uralic language spoken by around 12 532 990 people.
+
+The principal constructions expressing knowledge predication in the Hungarian New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "hun"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Iu Mien (ium)
+Iu Mien is a Hmong-Mien language spoken by around 813 600 people.
+
+The principal constructions expressing knowledge predication in the Iu Mien New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "ium"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Japanese (jpn)
+Japanese is a Japonic language spoken by around 126 257 610 people.
+
+The principal constructions expressing knowledge predication in the Japanese New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "jpn"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Kannada (kan)
+Kannada is a Dravidian language spoken by around 43 644 310 people.
+
+The principal constructions expressing knowledge predication in the Kannada New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "kan"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Halh Mongolian (khk)
+Halh Mongolian is a Mongolic-Khitan language spoken by around 2 704 030 people.
+
+The principal constructions expressing knowledge predication in the Halh Mongolian New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "khk"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Korean (kor)
+Korean is a Koreanic language spoken by around 81 520 400 people.
+
+The principal constructions expressing knowledge predication in the Korean New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "kor"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Swedish (swe)
+Swedish is an Indo-European>Germanic language spoken by around 9 654 400 people.
+
+The principal constructions expressing knowledge predication in the Swedish New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "swe"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Thai (tha)
+Thai is a Tai-Kadai language spoken by around 20 715 470 people.
+
+The principal constructions expressing knowledge predication in the Thai New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "tha"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Turkish (tur)
+Turkish is a Turkic language spoken by around 80 540 000 people.
+
+The principal constructions expressing knowledge predication in the Turkish New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "tur"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+
+### Oceania
+```{r}
+df_lngsb <- df_lngs[which(df_lngs$area =="Oceania"),]
+map.feature(languages = lang.iso(df_lngsb$lng),
+            features = df_lngsb$Type,
+            label = lang.iso(df_lngsb$lng),
+            popup = lang.iso(df_lngsb$lng)
+            )
+```
+
+##### Anggor (agg)
+Anggor is a Senagi language spoken by around 1 270 people.
+
+The principal constructions expressing knowledge predication in the Anggor New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "agg"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Bauzi (bvz)
+Bauzi is a Geelvink Bay language spoken by around 1 350 people.
+
+The principal constructions expressing knowledge predication in the Bauzi New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "bvz"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Daga (dgz)
+Daga is a Dagan language spoken by around 9 000 people.
+
+The principal constructions expressing knowledge predication in the Daga New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "dgz"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Fasu (faa)
+Fasu is a Fasu language spoken by around 1 100 people.
+
+The principal constructions expressing knowledge predication in the Fasu New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "faa"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Kire (geb)
+Kire is a Lower Sepik-Ramu language spoken by around 2 500 people.
+
+The principal constructions expressing knowledge predication in the Kire New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "geb"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Kalam (kmh)
+Kalam is a Nuclear Trans New Guinea language spoken by around 20 000 people.
+
+The principal constructions expressing knowledge predication in the Kalam New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "kmh"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Doromu-Koki (kqc)
+Doromu-Koki is a Manubaran language spoken by around 2 000 people.
+
+The principal constructions expressing knowledge predication in the Doromu-Koki New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "kqc"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Kuot (kto)
+Kuot is an isolate language spoken by around 1 500 people.
+
+The principal constructions expressing knowledge predication in the Kuot New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "kto"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Meyah (mej)
+Meyah is an East Bird's Head language spoken by around 14 800 people.
+
+The principal constructions expressing knowledge predication in the Meyah New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "mej"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Wubuy (nuy)
+Wubuy is a Gunwinyguan language spoken by around 280 people.
+
+The principal constructions expressing knowledge predication in the Wubuy New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "nuy"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Olo (ong)
+Olo is a Nuclear Torricelli language spoken by around 13 700 people.
+
+The principal constructions expressing knowledge predication in the Olo New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "ong"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Rotokas (roo)
+Rotokas is a North Bougainville language spoken by around 11 600 people.
+
+The principal constructions expressing knowledge predication in the Rotokas New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "roo"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Kriol (rop)
+Kriol is an English-lexifier Creole language spoken by around speakers 17 490 people.
+
+The principal constructions expressing knowledge predication in the Kriol New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "rop"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+
+##### Tabaru (tby)
+Tabaru is a North Halmahera language spoken by around 15 000 people.
+
+The principal constructions expressing knowledge predication in the Tabaru New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "tby"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### North Tanna (tnn)
+North Tanna is an Austronesian>Malayo-Polynesian language spoken by around 5000 people.
+
+The principal constructions expressing knowledge predication in the North Tanna New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "tnn"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Warlpiri (wbp)
+Warlpiri is a Pama-Nyungan language spoken by around 2300 people.
+
+The principal constructions expressing knowledge predication in the Warlpiri New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "wbp"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+##### Yele (yle)
+Yele is an isolate language spoken by around 5000 people.
+
+The principal constructions expressing knowledge predication in the Yele New Testament are shown in the table below.
+```{r}
+df_sub <- df[which(df$Language == "yle"), c("Construction", "Gloss", "Ocurrences", "EtymNotes", "UsageNotes", "Notes")]
+datatable(data = df_sub, rownames = F)
+```
+
+### Download
+<a href="constructions.csv" download>Download the full list of constructions</a>

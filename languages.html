@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Languages</title>
+
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="site_libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="site_libs/leaflet-providers-plugin-2.0.4.1/leaflet-providers-plugin.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.20/datatables.js"></script>
+<link href="site_libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Knowledge Predication</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Main</a>
+</li>
+<li>
+  <a href="dimensions.html">Dimensions</a>
+</li>
+<li>
+  <a href="markers.html">Markers</a>
+</li>
+<li>
+  <a href="clusters.html">Clustering</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Languages</h1>
+
+</div>
+
+
+<hr />
+<div id="north-and-meso-america" class="section level3">
+<h3>North and Meso-America</h3>
+<div id="htmlwidget-244aaddf2639520a3f5a" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-244aaddf2639520a3f5a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false},"calls":[{"method":"addTiles","args":["OpenStreetMap.Mapnik",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"OpenStreetMap.Mapnik",{"errorTileUrl":"","noWrap":false,"opacity":1,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[9.39794,17.5909,35.4664,17.4897,16.0954,63.17,60.3062,35.7653,14.6686,46,16.9634,40.030507,19.5392,20.704],[276.9461,263.555,276.837,267.5302,262.8661,242.75,198.514,249.465,272.9628,296,263.8814,283.6789,257.846,261.8053],5,null,["","","","","","","","","","","","","",""],{"interactive":true,"className":"","stroke":false,"color":"#03F","weight":1,"opacity":0.5,"fill":true,"fillColor":["#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#3B8BC6","#F78716","#F78716"],"fillOpacity":1},null,null,["<a href='https://glottolog.org/resource/languoid/id/brib1243' target='_blank'>Bribri<\/a><br>Bribri","<a href='https://glottolog.org/resource/languoid/id/coma1246' target='_blank'>Comaltepec Chinantec<\/a><br>Comaltepec Chinantec","<a href='https://glottolog.org/resource/languoid/id/cher1273' target='_blank'>Cherokee<\/a><br>Cherokee","<a href='https://glottolog.org/resource/languoid/id/chol1282' target='_blank'>Chol<\/a><br>Chol","<a href='https://glottolog.org/resource/languoid/id/nopa1235' target='_blank'>Nopala Chatino<\/a><br>Nopala Chatino","<a href='https://glottolog.org/resource/languoid/id/dogr1252' target='_blank'>Dogrib<\/a><br>Dogrib","<a href='https://glottolog.org/resource/languoid/id/cent2127' target='_blank'>Central Alaskan Yupik<\/a><br>Central Alaskan Yupik","<a href='https://glottolog.org/resource/languoid/id/hopi1249' target='_blank'>Hopi<\/a><br>Hopi","<a href='https://glottolog.org/resource/languoid/id/toll1241' target='_blank'>Tol<\/a><br>Tol","<a href='https://glottolog.org/resource/languoid/id/mikm1235' target='_blank'>Mi'kmaq<\/a><br>Mi'kmaq","<a href='https://glottolog.org/resource/languoid/id/tlah1239' target='_blank'>Tlahuitoltepec Mixe<\/a><br>Tlahuitoltepec Mixe","<a href='https://glottolog.org/resource/languoid/id/penn1240' target='_blank'>Pennsylvania German<\/a><br>Pennsylvania German","<a href='https://glottolog.org/resource/languoid/id/west2631' target='_blank'>Western Highland Purepecha<\/a><br>Western Highland Purepecha","<a href='https://glottolog.org/resource/languoid/id/tlac1235' target='_blank'>Tlachichilco Tepehua<\/a><br>Tlachichilco Tepehua"],null,["Bribri","Comaltepec Chinantec","Cherokee","Chol","Nopala Chatino","Dogrib","Central Alaskan Yupik","Hopi","Tol","Mi'kmaq","Tlahuitoltepec Mixe","Pennsylvania German","Western Highland Purepecha","Tlachichilco Tepehua"],{"interactive":false,"permanent":false,"direction":"right","opacity":1,"offset":[7.5,0],"textsize":"10px","textOnly":true,"style":{"font-size":"15px","font-family":"sans-serif"},"className":"","sticky":true},null]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]},{"method":"addLegend","args":[{"colors":["#3B8BC6","#F78716"],"labels":["Additional","Regular"],"na_color":null,"na_label":"NA","opacity":1,"position":"topright","type":"factor","title":null,"extra":null,"layerId":null,"className":"info legend","group":null}]}],"limits":{"lat":[9.39794,63.17],"lng":[198.514,296]}},"evals":[],"jsHooks":[]}</script>
+<div id="bribri-bzd" class="section level4">
+<h4>Bribri (bzd)</h4>
+<p>Bribri is a Chibchan language spoken by approximately 7000
+people.</p>
+<p>The principal constructions for expressing knowledge predication in
+the Briri New Testament are found in the table below.</p>
+<div id="htmlwidget-6f66dca5431bfb50b4e6" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6f66dca5431bfb50b4e6">{"x":{"filter":"none","vertical":false,"data":[["ijche̱nuk","S é̱na a̱ne","su-ule","ijche̱nuk/su/ttse-wa̱"],["'know'","'S liver/EXP.MARKER fall'= 'understand'","'see-ANTEPRESENT' = 'know person'","'know/see/hear-DIRECTIONAL'= 'find out/recognise'"],["23","16","6","9/3/2"],["","","",""],["","Also 'remember'","",""],["","The known is the subject of 'fall'","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="comaltepec-chinantec-cco" class="section level4">
+<h4>Comaltepec Chinantec (cco)</h4>
+<p>Comaltepec Chinantec is a Western Otomanguean language spoken by
+approximately 2 000 people.</p>
+<p>The principal constructions for expressing knowledge predication in
+the Chinantec New Testament are found in the table below.</p>
+<div id="htmlwidget-0fe3e3821db73c9def68" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0fe3e3821db73c9def68">{"x":{"filter":"none","vertical":false,"data":[["ñi","lí'","cuíi","ngá-ng","nɨ-(ñi/cuíi)","(ñi/ngá-ng/cuíi)-b","lɨ-(ñi/cuíi/lí')"],["'know'","'be able, know'","'know person'","'see-ANIMATE.OBJECT'= 'understand'","'PERF-know/know(person)' = ''find out', 'recognise'","'know/understand/know(person)-EMPH'","'ACTIVE-know/know(person)/able'"],["22","5","10","8","8","6/4/5","4/3/5"],["","","","","","",""],["","","","","","",""],["","","","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="cherokee-chr" class="section level4">
+<h4>Cherokee (chr)</h4>
+<p>Cherokee is an Iroquoian language spoken by approximately 1 520
+people.</p>
+<p>The principal constructions for expressing knowledge predication in
+the Cherokee New Testament are found in the table below.</p>
+<div id="htmlwidget-765d4e01b40dfad9998a" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-765d4e01b40dfad9998a">{"x":{"filter":"none","vertical":false,"data":[["gatah","olig","yeli","adolehos"],["'know'","'recognise, (find out)'","'enough' = 'be able'","'realise, understand'"],["24","14","3","5"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="chol-ctu" class="section level4">
+<h4>Chol (ctu)</h4>
+<p>Chol is a Mayan language spoken by approximately 252 000 people.</p>
+<p>The principal constructions for expressing knowledge predication in
+the Chol New Testament are found in the table below.</p>
+<div id="htmlwidget-ce9f0d7c6184f0c4b1ad" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ce9f0d7c6184f0c4b1ad">{"x":{"filter":"none","vertical":false,"data":[["ujil (isujm)","ña'tyan","ch'ʌm-be/-en isujm","cʌñ","ubi"],["'know (truly/truth)'","'realise, think'","'take-APPLICATIVE/?APPLICATIVE truth/truly' = 'understand'","'know person'","'hear'"],["13 (9)","15","5/5","9","5"],["","","","",""],["","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="nopala-chatino-cya" class="section level4">
+<h4>Nopala Chatino (cya)</h4>
+<p>Nopala Chatino is an Eastern Otomanguean language spoken by
+approximately 8 940 people.</p>
+<p>The principal constructions for expressing knowledge predication in
+the Chatino Nopala New Testament are found in the table below.</p>
+<div id="htmlwidget-53dee765ee68118ad5ce" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-53dee765ee68118ad5ce">{"x":{"filter":"none","vertical":false,"data":[["j-lyo ti'","tyu'wi lyoo","ki'ya cunta/cha' tiya"],["'CAUS-knowledge heart = 'know that'","'have knowledge' = 'know person'","'descend account(Sp.)/intelligence' = 'understand'"],["21","13","11/3"],["","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="dogrib-dgr" class="section level4">
+<h4>Dogrib (dgr)</h4>
+<p>Dogrib is an Athabaskan-Eyak-Tlingit language spoken by approximately
+1 650 people.</p>
+<p>The principal constructions for expressing knowledge predication in
+the Dogrib New Testament are found in the table below.</p>
+<div id="htmlwidget-3660577fbd7cc21ad928" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3660577fbd7cc21ad928">{"x":{"filter":"none","vertical":false,"data":[["yek'èezǫ","hok'èezǫ","yenıedì","ghǫ- ıìkw'o"],["'know'","'know the way'","'understand'","'about hear¨ = 'find out'"],["31","1","9","3"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="central-alaskan-yupik-esu" class="section level4">
+<h4>Central Alaskan Yupik (esu)</h4>
+<p>Central Alaskan Yupik is an Eskimo-Aleut language spoken by about 10
+000 people.</p>
+<p>The principal constructions for expressing knowledge predication in
+the Central Alaskan Yupik New Testament are found in the table
+below.</p>
+<div id="htmlwidget-8589322e582af348dee7" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8589322e582af348dee7">{"x":{"filter":"none","vertical":false,"data":[["nallu","taring","elitaq","niic","elpek"],["'not know'","'understand'","'recognise'","'hear'","'feel, sense' = 'realise'"],["34","9","3","4","3"],["","","","",""],["Used negated for positive 'know'","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="hopi-hop" class="section level5">
+<h5>Hopi (hop)</h5>
+<p>Hopi is a Northern Uto-Aztecan language spoken by around 6 080
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Hopi New Testament are shown in the table below.</p>
+<div id="htmlwidget-53afa2d57eb2019986e6" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-53afa2d57eb2019986e6">{"x":{"filter":"none","vertical":false,"data":[["navot","navot/tuwa-i'y","māmatsi","mātsi’y"],["'hear'","'hear/see-?' = 'know (that)/know (person)'","'recognise, understand'","'recognise, understand'"],["19","10/10","14","6"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="tol-jicaque-jic" class="section level5">
+<h5>Tol (Jicaque) (jic)</h5>
+<p>Tol (Jicaque) is a Jicaquean language spoken by around 300
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Tol (Jicaque) New Testament are shown in the table below.</p>
+<div id="htmlwidget-7d70e0a2eeb7da0b5827" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7d70e0a2eeb7da0b5827">{"x":{"filter":"none","vertical":false,"data":[["sele","jus nlay","ꞌyüsa.REFL","nyuc","si nuc"],["'know'","'understand'","'make.better REFL' = 'understand'","'see'","'know person'"],["21","11","11","3","3"],["","","","","might contain nyuc 'see'"],["","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="mikmaq-mic" class="section level5">
+<h5>Mi’kmaq (mic)</h5>
+<p>Mi’kmaq is an Algic language spoken by around 6 900 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Mi’kmaq New Testament are shown in the table below.</p>
+<div id="htmlwidget-290d86905c1531ecdea0" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-290d86905c1531ecdea0">{"x":{"filter":"none","vertical":false,"data":[["geitu","geji","nest","nenu","nutg"],["'know.INAN.OBJ'","'know.AN.OBJ'","'understand'","'recognise, know person'","'hear'"],["17","8","8","10","4"],["","","","",""],["","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="mixe-mxp" class="section level5">
+<h5>Mixe (mxp)</h5>
+<p>Mixe is a Mixe-Zoque language spoken by around 16 800 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Mixe New Testament are shown in the table below.</p>
+<div id="htmlwidget-5329c29ae94099e60450" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5329c29ae94099e60450">{"x":{"filter":"none","vertical":false,"data":[["nɨja̱'wɨ","ja̱'gyukɨ","(nɨ-)madø","ejx-ka","nɨja̱'wɨ/ja̱'gyukɨ-døø"],["'know'","'understand'","'?- hear' = 'understand'","'see-?' = 'recognise'","'know/understand-?' = 'know-as-achievement'"],["25","6","(4) 5","7","2/2"],["","","","",""],["","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="pennsylvania-german-pdc" class="section level5">
+<h5>Pennsylvania German (pdc)</h5>
+<p>Pennsylvania German is an Indo-European&gt;Germanic/Creole language
+spoken by around 148 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Pennsylvania German New Testament are shown in the table below.</p>
+<div id="htmlwidget-af01f4a76f88e18bc086" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-af01f4a76f88e18bc086">{"x":{"filter":"none","vertical":false,"data":[["viss","viss C-INF","fashtann","kenn","auskfunn"],["'know'","'know C-INF' = 'know how'","'understand'","'know person'","'find out'"],["23","3","9","12","6"],["","","","",""],["","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="purepecha-pua" class="section level5">
+<h5>Purepecha (pua)</h5>
+<p>Purepecha is a Tarascan language spoken by around 180 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Purepecha New Testament are shown in the table below.</p>
+<div id="htmlwidget-ec2e92f8f47c1530503c" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ec2e92f8f47c1530503c">{"x":{"filter":"none","vertical":false,"data":[["míte","míte-nta","jánhaska","kurha-ngu"],["'know'","'know-?' = 'recognise'","'understand'","'hear-?APPL' = 'understand'"],["37","3","4","8"],["Originally 'enter-mind'","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="tlachichilco-tepehua-tpt" class="section level5">
+<h5>Tlachichilco Tepehua (tpt)</h5>
+<p>Tlachichilco Tepehua is a Totonacan language spoken by around 3 000
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Tlachichilco Tepehua New Testament are shown in the table below.</p>
+<div id="htmlwidget-7db42a12d3e44f1a0435" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7db42a12d3e44f1a0435">{"x":{"filter":"none","vertical":false,"data":[["kʼatsa-IMPF(-cha)","kʼatsa-PVF","malaqasi(-IMPF/PFV)","mispa-IMPF(-cha)","mispa-PVF"],["'know-IMPF(-IAM)' = 'know-as-state'","'know-PFV' = 'know-as-achievement'","'understand'","'know(person)-IMPF(-IAM)'","'know(person)-PFV' = 'recognise'"],["15 (3)","9","9/3","5(3)","11"],["","","","",""],["","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="south-america" class="section level3">
+<h3>South America</h3>
+<div id="htmlwidget-589acc488ad52e53222b" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-589acc488ad52e53222b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false},"calls":[{"method":"addTiles","args":["OpenStreetMap.Mapnik",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"OpenStreetMap.Mapnik",{"errorTileUrl":"","noWrap":false,"opacity":1,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[-38.7392,-17,5.83772,-8.70232,6.19829,9.15686,-8.55268,1.07554,-1.13669,12.55352,-24.589,-14.3707,-25.0058,-9.57135,-11.1887,4.25877,-15.3331,4.5,-16.7479],[288.723,291.5,303.1677,284.5794,290.1803,281.6925,289.3352,290.4295,286.1669,278.29575,305.3185,300.4813,299.8463,284.406,301.8058,282.6434,294.5904,295.5,294.8776],5,null,["","","","","","","","","","","","","","","","","","",""],{"interactive":true,"className":"","stroke":false,"color":"#03F","weight":1,"opacity":0.5,"fill":true,"fillColor":["#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#3B8BC6","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716"],"fillOpacity":1},null,null,["<a href='https://glottolog.org/resource/languoid/id/mapu1245' target='_blank'>Mapudungun<\/a><br>Mapudungun","<a href='https://glottolog.org/resource/languoid/id/cent2142' target='_blank'>Central Aymara<\/a><br>Central Aymara","<a href='https://glottolog.org/resource/languoid/id/gali1262' target='_blank'>Galibi Carib<\/a><br>Galibi Carib","<a href='https://glottolog.org/resource/languoid/id/cash1251' target='_blank'>Cashibo-Cacataibo<\/a><br>Cashibo-Cacataibo","<a href='https://glottolog.org/resource/languoid/id/cuib1242' target='_blank'>Cuiba<\/a><br>Cuiba","<a href='https://glottolog.org/resource/languoid/id/sanb1242' target='_blank'>San Blas Kuna<\/a><br>San Blas Kuna","<a href='https://glottolog.org/resource/languoid/id/culi1244' target='_blank'>Culina<\/a><br>Culina","<a href='https://glottolog.org/resource/languoid/id/guan1269' target='_blank'>Kotiria<\/a><br>Kotiria","<a href='https://glottolog.org/resource/languoid/id/muru1274' target='_blank'>Murui Huitoto<\/a><br>Murui Huitoto","<a href='https://glottolog.org/resource/languoid/id/sana1297' target='_blank'>San Andres Creole English<\/a><br>San Andres Creole English","<a href='https://glottolog.org/resource/languoid/id/kaiw1246' target='_blank'>Kaiwá<\/a><br>Kaiwá","<a href='https://glottolog.org/resource/languoid/id/sout2994' target='_blank'>Southern Nambikuára<\/a><br>Southern Nambikuára","<a href='https://glottolog.org/resource/languoid/id/pila1245' target='_blank'>Pilagá<\/a><br>Pilagá","<a href='https://glottolog.org/resource/languoid/id/hual1241' target='_blank'>Huallaga Huánuco Quechua<\/a><br>Huallaga Huánuco Quechua","<a href='https://glottolog.org/resource/languoid/id/rikb1245' target='_blank'>Rikbaktsa<\/a><br>Rikbaktsa","<a href='https://glottolog.org/resource/languoid/id/epen1239' target='_blank'>Epena<\/a><br>Epena","<a href='https://glottolog.org/resource/languoid/id/trin1274' target='_blank'>Trinitario-Javeriano-Loretano<\/a><br>Trinitario-Javeriano-Loretano","<a href='https://glottolog.org/resource/languoid/id/sanu1240' target='_blank'>Sanumá<\/a><br>Sanumá","<a href='https://glottolog.org/resource/languoid/id/yura1255' target='_blank'>Yuracaré<\/a><br>Yuracaré"],null,["Mapudungun","Central Aymara","Galibi Carib","Cashibo-Cacataibo","Cuiba","San Blas Kuna","Culina","Kotiria","Murui Huitoto","San Andres Creole English","Kaiwá","Southern Nambikuára","Pilagá","Huallaga Huánuco Quechua","Rikbaktsa","Epena","Trinitario-Javeriano-Loretano","Sanumá","Yuracaré"],{"interactive":false,"permanent":false,"direction":"right","opacity":1,"offset":[7.5,0],"textsize":"10px","textOnly":true,"style":{"font-size":"15px","font-family":"sans-serif"},"className":"","sticky":true},null]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]},{"method":"addLegend","args":[{"colors":["#3B8BC6","#F78716"],"labels":["Additional","Regular"],"na_color":null,"na_label":"NA","opacity":1,"position":"topright","type":"factor","title":null,"extra":null,"layerId":null,"className":"info legend","group":null}]}],"limits":{"lat":[-38.7392,12.55352],"lng":[278.29575,305.3185]}},"evals":[],"jsHooks":[]}</script>
+<div id="mapudungun-arn" class="section level5">
+<h5>Mapudungun (arn)</h5>
+<p>Mapudungun is an Araucanian language spoken by around 258 410
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Mapudungun New Testament are shown in the table below.</p>
+<div id="htmlwidget-22883d035c831bb2bf62" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-22883d035c831bb2bf62">{"x":{"filter":"none","vertical":false,"data":[["kim","kim(-fem/-we)-tu","(dew) kim-nie","ngüne-duam","longkontuku","adüm"],["'know'","know-(-immediate/-?)-restorative) = 'recognise'","'IAM know-PROG.PERSISTENT'","'direct/rule-attention' = 'realise'","'head-put', ='realise'","'learn'"],["25","3","(4)7","8","1","2"],["","","","duam 'attention' also ocurrs once in the verse sample with raki 'count'","",""],["","","","","",""],["","","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="central-aymara-ayr" class="section level5">
+<h5>Central Aymara (ayr)</h5>
+<p>Central Aymara is an Aymaran language spoken by around 1 464 100
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Central Aymara New Testament are shown in the table below.</p>
+<div id="htmlwidget-f51d505647c9024385a1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f51d505647c9024385a1">{"x":{"filter":"none","vertical":false,"data":[["yati","amuya","uñt'a","yati/amuya/uñt'a-xa","amuya-t'a","yati C-ña","niy yati/amuya-xa"],["'know'","'understand'","'know person'","'know/understand/know(person)-COMPLETIVE'","'understand-MOMENTANEOUS'","'know C-NMLZ'","'IAM know/understand-COMPLETIVE'"],["26","14","13","8/8/4","4","4","2/1"],["","","Derived from uñja 'see', possibly by -t'a 'momentaneous'","","","",""],["","","","May co-occur with -t'a 'momentaneous'","May co-occur with -xa 'completive'","know how'",""],["","","","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="carib-car" class="section level5">
+<h5>Carib (car)</h5>
+<p>Carib is a Cariban language spoken by around 8 558 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Carib New Testament are shown in the table below.</p>
+<div id="htmlwidget-5eeea0b7e842934571bc" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5eeea0b7e842934571bc">{"x":{"filter":"none","vertical":false,"data":[["ukuty","ukuty-'po (S 'wa)"],["'know'","'know-POSS S POSTP' = 'know-as-achievement'"],["51","16(14)"],["",""],["",""],["",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="cashibo-cacataibo-cbr" class="section level5">
+<h5>Cashibo-Cacataibo (cbr)</h5>
+<p>Cashibo-Cacataibo is a Pano-Tacanan language spoken by around 2 780
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Cashibo-Cacataibo New Testament are shown in the table below.</p>
+<div id="htmlwidget-980b585fdce43a92c487" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-980b585fdce43a92c487">{"x":{"filter":"none","vertical":false,"data":[["’unan","sinan","cua","’unan-i"],["'know'","'understand, realise'","'hear, find out, understand'","'know-IMPFV' = 'know-as-state'"],["35","3","11","9"],["","","",""],["","Also 'think'","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="cuiba-cui" class="section level5">
+<h5>Cuiba (cui)</h5>
+<p>Cuiba is a Guahiboan language spoken by around 2 640 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Cuiba New Testament are shown in the table below.</p>
+<div id="htmlwidget-b9853d865cf93d698005" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b9853d865cf93d698005">{"x":{"filter":"none","vertical":false,"data":[["yapu-tane","yai-tane","jume-tame","yapu/yai-tane-taba/-rʉcʉpa"],["'?-see' = 'know'","'?-see' = 'know person'","'word/voice-see' = 'hear'","'know-ITER' = 'recognise, realise'"],["37","8","3","3"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="san-blas-kuna-cuk" class="section level5">
+<h5>San Blas Kuna (cuk)</h5>
+<p>San Blas Kuna is a Chibchan language spoken by around 57 100
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+San Blas Kuna New Testament are shown in the table below.</p>
+<div id="htmlwidget-213e760426f43836f338" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-213e760426f43836f338">{"x":{"filter":"none","vertical":false,"data":[["wisi","ito","mag/aku ito/dake"],["'know'","'hear'","'able/unable hear/see' = '(not) understand, find out, recognise'"],["27","4","7/3/7/4"],["","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="culina-cul" class="section level5">
+<h5>Culina (cul)</h5>
+<p>Culina is an Arawan language spoken by around 3 420 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Culina New Testament are shown in the table below.</p>
+<div id="htmlwidget-d60ce4d73cd847a18903" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d60ce4d73cd847a18903">{"x":{"filter":"none","vertical":false,"data":[["nahato","ssamo","mitta","mitta-nissa","qqui","jidsa"],["'know'","'not.know'","'hear'","'hear-?' = 'understand'","'see' = 'know person'","'not recognise'"],["18","9","6","5","3","4"],["","","","","",""],["","","","","",""],["","","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="kotiria-gvc" class="section level5">
+<h5>Kotiria (gvc)</h5>
+<p>Kotiria is a Tucanoan language spoken by around 1 300 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Kotiria New Testament are shown in the table below.</p>
+<div id="htmlwidget-c8dfb7c808d20b0a4d65" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c8dfb7c808d20b0a4d65">{"x":{"filter":"none","vertical":false,"data":[["masi","masi-na","tʉho","tʉho-tu","ñʉ/tʉho masi"],["'know'","'know-EVIDENTIAL'","'hear' (='understand')","'hear-?THINK' = 'understand, realise, believe, think'","'see/hear know' = 'recognise'"],["41","8","10","2","2/1"],["","","","",""],["Used in knowledge predication with second person subject","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="murui-huitoto-huu" class="section level5">
+<h5>Murui Huitoto (huu)</h5>
+<p>Murui Huitotois a Huitotoan language spoken by around 1000
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Murui Huitoto New Testament are shown in the table below.</p>
+<div id="htmlwidget-b88bbb644184f9d9ed39" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b88bbb644184f9d9ed39">{"x":{"filter":"none","vertical":false,"data":[["(jai) uiño","caca(-i)","fɨdɨ"],["'IAM know'","'hear-(EMPH)' = 'understand'","'find out'"],["(3) 36","6","4"],["","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="san-andres-creole-english-icr" class="section level5">
+<h5>San Andres Creole English (icr)</h5>
+<p>San Andres Creole English is an Indo-European&gt;Germanic/Creole
+language spoken by around 12 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+San Andres Creole English New Testament are shown in the table
+below.</p>
+<div id="htmlwidget-833fbc2e3f2888f7fbd3" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-833fbc2e3f2888f7fbd3">{"x":{"filter":"none","vertical":false,"data":[["nuo","andastan","fain out","hier"],["'know'","'understand'","'find out'","'hear'"],["31","9","3","4"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="kaiwá-kgk" class="section level5">
+<h5>Kaiwá (kgk)</h5>
+<p>Kaiwá is a Tupian language spoken by around 18 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Kaiwá New Testament are shown in the table below.</p>
+<div id="htmlwidget-8185ac48a14e4e26d4ca" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8185ac48a14e4e26d4ca">{"x":{"filter":"none","vertical":false,"data":[["kwaa(-ma)","hexa kwaa","hendu"],["'know(-IAM)'","'see know'","'hear'"],["37 (10)","3","5"],["","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="southern-nambikuára-nab" class="section level5">
+<h5>Southern Nambikuára (nab)</h5>
+<p>Southern Nambikuára is a Nambiquaran language spoken by around 720
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Southern Nambikuára New Testament are shown in the table below.</p>
+<div id="htmlwidget-1edfdd52a8a4650e4a2d" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1edfdd52a8a4650e4a2d">{"x":{"filter":"none","vertical":false,"data":[["ĩ²","ä³ne³wxe³","a³la³kxi²","ain³kxi²","ã³ye³wxe³"],["'see' = 'know (primarily person)'","'know'","'know'","'hear'","'know'"],["10","13","5","5","3"],["","","","",""],["","","According to dictionary, 'know everything'","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="pilagá-plg" class="section level5">
+<h5>Pilagá (plg)</h5>
+<p>Pilagá is a Guaicuruan language spoken by around 3490 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Pilagá New Testament are shown in the table below.</p>
+<div id="htmlwidget-9746dc8b2c77f23b3f0d" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9746dc8b2c77f23b3f0d">{"x":{"filter":"none","vertical":false,"data":[["ỹáte(-n)","ateto-n"],["'know-N.PROG'","'know(person)-N.PROG'"],["30 (24)","15"],["",""],["",""],["",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="huallaga-huánuco-quechua-qub" class="section level5">
+<h5>Huallaga Huánuco Quechua (qub)</h5>
+<p>Huallaga Huánuco Quechua is a Quechuan language spoken by around 40
+000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Huallaga Huánuco Quechua New Testament are shown in the table below.</p>
+<div id="htmlwidget-72d7f8c24af3c5d62d3d" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-72d7f8c24af3c5d62d3d">{"x":{"filter":"none","vertical":false,"data":[["musya","rejsi","tantiya","musya-ycu"],["'know'","'know (person)/recognise'","'understand'","'know-IMPACT' = 'find out'"],["24","11","11","4"],["","","",""],["","Also occurs with clausal who- objects","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="rikbaktsa-rkb" class="section level5">
+<h5>Rikbaktsa (rkb)</h5>
+<p>Rikbaktsa is a Nuclear-Macro-Je language spoken by around 40
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Rikbaktsa New Testament are shown in the table below.</p>
+<div id="htmlwidget-df991bd00685a38d9df3" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-df991bd00685a38d9df3">{"x":{"filter":"none","vertical":false,"data":[["(O humo) (hyri-)ny-myry(-rẽ)","ny","waby"],["'(O POSTP) (?-)see-?(-?)' = 'know'","'see' = 'know person'","'hear'"],["(12) 14 (10)","20","6"],["","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="epena-sja" class="section level5">
+<h5>Epena (sja)</h5>
+<p>Epena is a Chocoan language spoken by around 3 500 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Epena New Testament are shown in the table below.</p>
+<div id="htmlwidget-8e086bc236d4315f77a8" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8e086bc236d4315f77a8">{"x":{"filter":"none","vertical":false,"data":[["k'awa-a","k'awa AUX"],["'know-?' = 'know-as-achievement","'know AUX' = 'know-as-state'"],["12 (3)","29"],["",""],["",""],["",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="trinitario-trn" class="section level5">
+<h5>Trinitario (trn)</h5>
+<p>Trinitario is an Arawakan language spoken by around 3 140 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Trinitario New Testament are shown in the table below.</p>
+<div id="htmlwidget-fdf911017bc47ccecbb1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fdf911017bc47ccecbb1">{"x":{"filter":"none","vertical":false,"data":[["echo","imoti","echemcho","quictiora","echo/imoti-po"],["'know'","'know (person)'","'understand'","'understand/realise'","'know/know(person)-PFV' = 'find out/recognise'"],["28","17","11","3","10/3"],["","","Probably related to echo 'know'","",""],["","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="sanumá-xsu" class="section level5">
+<h5>Sanumá (xsu)</h5>
+<p>Sanumá is a Yanomamic language spoken by around 6 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Sanumá New Testament are shown in the table below.</p>
+<div id="htmlwidget-c17a0e7967364a30c572" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c17a0e7967364a30c572">{"x":{"filter":"none","vertical":false,"data":[["ta(-ö) (öpö) (waiki)","hini(-nö)","pi ku"],["'know/see-N.ASP (INT) (IAM)'","'hear-(?DIRECTIONAL') = 'find out, understand'","'inside say' = 'realise'"],["25(16)(13)(5)","8","4"],["","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="yuracaré-yuz" class="section level5">
+<h5>Yuracaré (yuz)</h5>
+<p>Yuracaré is an isolate language spoken by around 1 810 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Yuracaré New Testament are shown in the table below.</p>
+<div id="htmlwidget-daed216b3454270f70e7" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-daed216b3454270f70e7">{"x":{"filter":"none","vertical":false,"data":[["ile","iyepe","huëshë","huëshë(-të)"],["'know'","'know (person)'","'hear'","'hear-MIDDLE' = 'realise, understand'"],["29","13","5","3"],["","","",""],["The Knowers are marked as objects on ile","","","Also 'remember'"],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="africa" class="section level3">
+<h3>Africa</h3>
+<div id="htmlwidget-04af2016be5f78f5492b" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-04af2016be5f78f5492b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false},"calls":[{"method":"addTiles","args":["OpenStreetMap.Mapnik",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"OpenStreetMap.Mapnik",{"errorTileUrl":"","noWrap":false,"opacity":1,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[-22,5.06515,12.8554,14.40749,4.62705,8.32448,10.9284,3.62499,10.9194,6.69756,-22.0939,14.2038,1.18321,9.16012,6.32668,9.97186],[30,36.5176,2.41173,-3.10006,7.23441,-10.3377,14.0474,31.8471,30.2138,33.988,20.7458,-2.41269,33.9394,34.2293,37.7537,-11.2836],5,null,["","","","","","","","","","","","","","","",""],{"interactive":true,"className":"","stroke":false,"color":"#03F","weight":1,"opacity":0.5,"fill":true,"fillColor":["#3B8BC6","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716"],"fillOpacity":1},null,null,["<a href='https://glottolog.org/resource/languoid/id/afri1274' target='_blank'>Afrikaans<\/a><br>Afrikaans","<a href='https://glottolog.org/resource/languoid/id/hame1242' target='_blank'>Hamer-Banna<\/a><br>Hamer-Banna","<a href='https://glottolog.org/resource/languoid/id/zarm1239' target='_blank'>Zarma<\/a><br>Zarma","<a href='https://glottolog.org/resource/languoid/id/toro1252' target='_blank'>Toro So Dogon<\/a><br>Toro So Dogon","<a href='https://glottolog.org/resource/languoid/id/nucl1417' target='_blank'>Igbo<\/a><br>Igbo","<a href='https://glottolog.org/resource/languoid/id/sout2778' target='_blank'>Southern Kisi<\/a><br>Southern Kisi","<a href='https://glottolog.org/resource/languoid/id/mata1306' target='_blank'>Matal<\/a><br>Matal","<a href='https://glottolog.org/resource/languoid/id/madi1260' target='_blank'>Ma'di<\/a><br>Ma'di","<a href='https://glottolog.org/resource/languoid/id/moro1285' target='_blank'>Moro<\/a><br>Moro","<a href='https://glottolog.org/resource/languoid/id/murl1244' target='_blank'>Murle<\/a><br>Murle","<a href='https://glottolog.org/resource/languoid/id/naro1249' target='_blank'>Naro<\/a><br>Naro","<a href='https://glottolog.org/resource/languoid/id/tama1365' target='_blank'>Tamasheq<\/a><br>Tamasheq","<a href='https://glottolog.org/resource/languoid/id/teso1249' target='_blank'>Teso<\/a><br>Teso","<a href='https://glottolog.org/resource/languoid/id/uduk1239' target='_blank'>Uduk<\/a><br>Uduk","<a href='https://glottolog.org/resource/languoid/id/wola1242' target='_blank'>Wolaytta<\/a><br>Wolaytta","<a href='https://glottolog.org/resource/languoid/id/yalu1240' target='_blank'>Yalunka<\/a><br>Yalunka"],null,["Afrikaans","Hamer-Banna","Zarma","Toro So Dogon","Igbo","Southern Kisi","Matal","Ma'di","Moro","Murle","Naro","Tamasheq","Teso","Uduk","Wolaytta","Yalunka"],{"interactive":false,"permanent":false,"direction":"right","opacity":1,"offset":[7.5,0],"textsize":"10px","textOnly":true,"style":{"font-size":"15px","font-family":"sans-serif"},"className":"","sticky":true},null]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]},{"method":"addLegend","args":[{"colors":["#3B8BC6","#F78716"],"labels":["Additional","Regular"],"na_color":null,"na_label":"NA","opacity":1,"position":"topright","type":"factor","title":null,"extra":null,"layerId":null,"className":"info legend","group":null}]}],"limits":{"lat":[-22.0939,14.40749],"lng":[-11.2836,37.7537]}},"evals":[],"jsHooks":[]}</script>
+<div id="afrikaans-afr" class="section level5">
+<h5>Afrikaans (afr)</h5>
+<p>Afrikaans is an Indo-European&gt;Germanic language spoken by around 7
+331 780 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Afrikaans New Testament are shown in the table below.</p>
+<div id="htmlwidget-a6e4cd97c54e7d98cd89" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a6e4cd97c54e7d98cd89">{"x":{"filter":"none","vertical":false,"data":[["weet","ken","herken","verstaan","snap, begryp, deurdring, agterkom"],["'know (that)'","'know (person'","'DIRECTIONAL-know' = 'recognise'","'understand'","'understand, realise'"],["18","8","3","5","4"],["","","","motion metaphor","all metaphors of grasping/motion"],["","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="hamer-banna-amf" class="section level5">
+<h5>Hamer-Banna (amf)</h5>
+<p>Hamer-Banna is a South Omotic language spoken by around 26 900
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Hamer-Banna New Testament are shown in the table below.</p>
+<div id="htmlwidget-098848b703a99da0413f" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-098848b703a99da0413f">{"x":{"filter":"none","vertical":false,"data":[["dhesa","dhesa O-am-aar","bhoq","arda","qansa"],["'know'","'know O-?OBJ-?INSTR","'understand', 'remember'","'enter', ='understand'","'hear'"],["44","2","4","2","1"],["","appears to make knowledge relation more distant, cf. know of","","",""],["","","","",""],["","","","Knower is the dative argument",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="zarma-dje" class="section level5">
+<h5>Zarma (dje)</h5>
+<p>Zarma is a Songhay language spoken by around 4 330 100 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Zarma New Testament are shown in the table below.</p>
+<div id="htmlwidget-2e7125ab2fcb1cb48dfc" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2e7125ab2fcb1cb48dfc">{"x":{"filter":"none","vertical":false,"data":[["bay","faham (da)"],["'know'","'understand (PREP)'"],["39","9"],["","Probably loan from Arabic f-h-m 'understand'"],["",""],["",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="toro-so-dogon-dts" class="section level5">
+<h5>Toro So Dogon (dts)</h5>
+<p>Toro So Dogon is a Dogon language spoken by around 50 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Toro So Dogon New Testament are shown in the table below.</p>
+<div id="htmlwidget-38ef22328ae8b77ec0c0" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-38ef22328ae8b77ec0c0">{"x":{"filter":"none","vertical":false,"data":[["igii (wɔ-)","inɛɛ (bee)","jugɔ","paamaa","ɛgaa"],["'know (AUX)'","'not know (AUX)'","'realise, understand'","'understand'","'hear'"],["17 (15)","9 (3)","14","4","6"],["","","","Probably loan from Arabic f-h-m 'understand'",""],["","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="igbo-ibo" class="section level5">
+<h5>Igbo (ibo)</h5>
+<p>Igbo is a Atlantic-Congo&gt;Volta-Congo&gt;Benue-Congo&gt;Igboid
+language spoken by around 29 000 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Igbo New Testament are shown in the table below.</p>
+<div id="htmlwidget-4a758b280d335e137116" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4a758b280d335e137116">{"x":{"filter":"none","vertical":false,"data":[["ma(-ta)","ma-zu","ghọ-ta"],["'know(-ASP)'","'know-COMPLETE' = 'know-as-achievement'","'grasp-ASP' = 'understand'"],["41 (30)","8","5"],["","",""],["Exact meaning of -ta in this conctext unclear","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="southern-kisi-kss" class="section level5">
+<h5>Southern Kisi (kss)</h5>
+<p>Southern Kisi is a Atlantic-Congo&gt;Mel language spoken by around
+318 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Southern Kisi New Testament are shown in the table below.</p>
+<div id="htmlwidget-13f43b2ceda21edc0e80" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-13f43b2ceda21edc0e80">{"x":{"filter":"none","vertical":false,"data":[["sina","sina pɛŋgu","saaluŋ","tuei"],["'know'","'know IDEOPH' = 'understand'","'realise'","'hear'"],["33","12","3","3"],["","","This appears to be a middle form",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="matal-mfh" class="section level5">
+<h5>Matal (mfh)</h5>
+<p>Matal is an Afro-Asiatic&gt;Chadic language spoken by around 18 000
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Matal New Testament are shown in the table below.</p>
+<div id="htmlwidget-fcab33ee3d7a08daf521" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fcab33ee3d7a08daf521">{"x":{"filter":"none","vertical":false,"data":[["səl","tsən(-aŋ)","da-səl/tsən"],["'know'","'hear-(?)' = 'understand'","'PFV-know/hear' = 'find out'"],["39","15 (4)","1/5"],["","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="madi-mhi" class="section level5">
+<h5>Ma’di (mhi)</h5>
+<p>Ma’di is a Central Sudanic language spoken by around 326 000
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Ma’di New Testament are shown in the table below.</p>
+<div id="htmlwidget-2504f94f50b8cdd991ae" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2504f94f50b8cdd991ae">{"x":{"filter":"none","vertical":false,"data":[["ni (ote)","eri","oce S.NSBJ eri"],["'know PRTCL'","'hear'","'they.say S hear' = 'find out (by hearsay)'"],["38 (18)","6","4"],["","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="moro-mor" class="section level5">
+<h5>Moro (mor)</h5>
+<p>Moro is a Heibanic language spoken by around 72 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Moro New Testament are shown in the table below.</p>
+<div id="htmlwidget-41833c95a8a85d32c34b" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-41833c95a8a85d32c34b">{"x":{"filter":"none","vertical":false,"data":[["liŋeṯ","ijǝba"],["'know'","'not know'"],["36","14"],["",""],["",""],["",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="murle-mur" class="section level5">
+<h5>Murle (mur)</h5>
+<p>Murle is a Surmic language spoken by around 196 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Murle New Testament are shown in the table below.</p>
+<div id="htmlwidget-8657376f16eb6deb0ec8" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8657376f16eb6deb0ec8">{"x":{"filter":"none","vertical":false,"data":[["ga","ga-ac","kɔ zii/ga/cin","zii"],["'know'","'know-DIR' = 'understand, realise'","'go hear/know/see' = 'find out, recognise'","'hear'"],["38","7","3/1/1","5"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="naro-nhr" class="section level5">
+<h5>Naro (nhr)</h5>
+<p>Naro is a Khoe-Kwadi language spoken by around 10 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Naro New Testament are shown in the table below.</p>
+<div id="htmlwidget-d6e6b9da9a5aa35b4802" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d6e6b9da9a5aa35b4802">{"x":{"filter":"none","vertical":false,"data":[["q'ãa-na hãa","c'úù-a hãa","kóḿ-a (kò) q'ãa","bóò-a (kò) 'ãa"],["'know-PFV IMPFV' = 'know'","'not.know.PFV IMPF' = 'not know'","'hear-CONN (PRTCL) know' = 'understand'","'see-CONN (PCRTL) know' = ”find out, recognise'"],["14","10","11","9"],["","","",""],["This appears to be the default construction in which both q'ãa and cúù occur","This appears to be the default construction in which both q'ãa and cúù occur","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="tamasheq-taq" class="section level5">
+<h5>Tamasheq (taq)</h5>
+<p>Tamasheq is an Afro-Asiatic&gt;Berber language spoken by around 500
+000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Tamasheq New Testament are shown in the table below.</p>
+<div id="htmlwidget-0f712779a592134c8862" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0f712779a592134c8862">{"x":{"filter":"none","vertical":false,"data":[["ĕssan","ĕfham","ĕjreh","ĕzzăy","ĕlmăd","ĕsla"],["'know (that)'","'understand'","'find out'","'know (person'","'understand, realise'","'hear'"],["18","5","6","10","6","3"],["","","","","",""],["","","","","",""],["","","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="teso-teo" class="section level5">
+<h5>Teso (teo)</h5>
+<p>Teso is a Nilotic language spoken by around 2 699 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Teso New Testament are shown in the table below.</p>
+<div id="htmlwidget-ff2993f211f2877e25f2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ff2993f211f2877e25f2">{"x":{"filter":"none","vertical":false,"data":[["jen","jen-u(n/t)(-ia)"],["'know'","'know-VENTIVE-?' = 'know-as-achievement'"],["29","24 (7)"],["",""],["",""],["",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="uduk-udu" class="section level5">
+<h5>Uduk (udu)</h5>
+<p>Uduk is a Koman language spoken by around 22 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Uduk New Testament are shown in the table below.</p>
+<div id="htmlwidget-5351049e9e0e0c7bbd3a" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5351049e9e0e0c7bbd3a">{"x":{"filter":"none","vertical":false,"data":[["mish(-ki)","mish(-ki) gwo/’ban","nyiṯẖ(-ki)","da/ar-ki gwo"],["'know-(-DIRECTIONAL)'","'know(-DIRECTIONAL) word/temple'","'recognise-DIRECTIONAL'","'find.out-DIRECTIONAL word' = 'find out'"],["40 (25)","9/8","7(6)","5"],["","","","The etymology might be 'insert'"],["","In some cases, 'ban and gwo co-occur","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="wolaytta-wal" class="section level5">
+<h5>Wolaytta (wal)</h5>
+<p>Wolaytta is a Ta-Ne-Omotic language spoken by around 2 380 000
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Wolaytta New Testament are shown in the table below.</p>
+<div id="htmlwidget-c76a81436581eb97d995" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c76a81436581eb97d995">{"x":{"filter":"none","vertical":false,"data":[["er(-PFV)","akeek(-PFV)","er O-baa","siy","S-DAT gel"],["'know(-as-achievement)'","'understand'","'know O-thing/matter/about' = 'know of/about'","'hear'","'S-DAT enter' = 'understand'"],["40","8","3","3","2"],["","","","",""],["","In one instance the Knower appears to be Dative","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="yalunka-yal" class="section level5">
+<h5>Yalunka (yal)</h5>
+<p>Yalunka is a Mande language spoken by around 173 300 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Yalunka New Testament are shown in the table below.</p>
+<div id="htmlwidget-b6c5379df800099d7cd5" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b6c5379df800099d7cd5">{"x":{"filter":"none","vertical":false,"data":[["kolon (ba)","mɛ"],["'know PRTCL'","'hear'"],["47 (3)","6"],["",""],["",""],["",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="eurasia" class="section level3">
+<h3>Eurasia</h3>
+<div id="htmlwidget-0cc72fd3d04e279daab6" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0cc72fd3d04e279daab6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false},"calls":[{"method":"addTiles","args":["OpenStreetMap.Mapnik",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"OpenStreetMap.Mapnik",{"errorTileUrl":"","noWrap":false,"opacity":1,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[27.9625,24,9.18853,43.5,40.0209,25.4198,51.65,43.2787,46.9068585714,20.83,35,13.5878,48.32397,37.54,59.800634,14.192,39.8667],[43.8525,90,92.7671,45.5,116.228,93.1806,-1.11,-1.31622,19.6555271429,101.17,135,76.1198,106.28874,126.98,17.389526,100.671,32.8667],5,null,["","","","","","","","","","","","","","","","",""],{"interactive":true,"className":"","stroke":false,"color":"#03F","weight":1,"opacity":0.5,"fill":true,"fillColor":["#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#3B8BC6","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716"],"fillOpacity":1},null,null,["<a href='https://glottolog.org/resource/languoid/id/stan1318' target='_blank'>Standard Arabic<\/a><br>Standard Arabic","<a href='https://glottolog.org/resource/languoid/id/beng1280' target='_blank'>Bengali<\/a><br>Bengali","<a href='https://glottolog.org/resource/languoid/id/carn1240' target='_blank'>Car Nicobarese<\/a><br>Car Nicobarese","<a href='https://glottolog.org/resource/languoid/id/chec1245' target='_blank'>Chechen<\/a><br>Chechen","<a href='https://glottolog.org/resource/languoid/id/mand1415' target='_blank'>Mandarin Chinese<\/a><br>Mandarin Chinese","<a href='https://glottolog.org/resource/languoid/id/dima1251' target='_blank'>Dimasa<\/a><br>Dimasa","<a href='https://glottolog.org/resource/languoid/id/midd1317' target='_blank'>Middle English<\/a><br>Middle English","<a href='https://glottolog.org/resource/languoid/id/basq1248' target='_blank'>Basque<\/a><br>Basque","<a href='https://glottolog.org/resource/languoid/id/hung1274' target='_blank'>Hungarian<\/a><br>Hungarian","<a href='https://glottolog.org/resource/languoid/id/iumi1238' target='_blank'>Iu Mien<\/a><br>Iu Mien","<a href='https://glottolog.org/resource/languoid/id/nucl1643' target='_blank'>Japanese<\/a><br>Japanese","<a href='https://glottolog.org/resource/languoid/id/nucl1305' target='_blank'>Kannada<\/a><br>Kannada","<a href='https://glottolog.org/resource/languoid/id/halh1238' target='_blank'>Halh Mongolian<\/a><br>Halh Mongolian","<a href='https://glottolog.org/resource/languoid/id/kore1280' target='_blank'>Korean<\/a><br>Korean","<a href='https://glottolog.org/resource/languoid/id/swed1254' target='_blank'>Swedish<\/a><br>Swedish","<a href='https://glottolog.org/resource/languoid/id/thai1261' target='_blank'>Thai<\/a><br>Thai","<a href='https://glottolog.org/resource/languoid/id/nucl1301' target='_blank'>Turkish<\/a><br>Turkish"],null,["Standard Arabic","Bengali","Car Nicobarese","Chechen","Mandarin Chinese","Dimasa","Middle English","Basque","Hungarian","Iu Mien","Japanese","Kannada","Halh Mongolian","Korean","Swedish","Thai","Turkish"],{"interactive":false,"permanent":false,"direction":"right","opacity":1,"offset":[7.5,0],"textsize":"10px","textOnly":true,"style":{"font-size":"15px","font-family":"sans-serif"},"className":"","sticky":true},null]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]},{"method":"addLegend","args":[{"colors":["#3B8BC6","#F78716"],"labels":["Additional","Regular"],"na_color":null,"na_label":"NA","opacity":1,"position":"topright","type":"factor","title":null,"extra":null,"layerId":null,"className":"info legend","group":null}]}],"limits":{"lat":[9.18853,59.800634],"lng":[-1.31622,135]}},"evals":[],"jsHooks":[]}</script>
+<div id="modern-standard-arabic-arb" class="section level5">
+<h5>Modern Standard Arabic (arb)</h5>
+<p>Modern Standard Arabic is an Afro-Asiatic&gt;Semitic language spoken
+by around 273 989 700 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Modern Standard Arabic New Testament are shown in the table below.</p>
+<div id="htmlwidget-d95b1914965cfe341446" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d95b1914965cfe341446">{"x":{"filter":"none","vertical":false,"data":[["C-r-f","C-l-m","li-Cilmi-POSS","f-h-m","ad-r-k"],["'know' ","'know'","'knowledge'","'understand'","'understand, 'realise'"],["24","12","1","11","2"],["","","possessed nominalisation","","form IV of d-r-k 'reach'"],["","limited to objects with propositional content","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="bengali-ben" class="section level5">
+<h5>Bengali (ben)</h5>
+<p>Bengali is an Indo-European&gt;Indo-Iranian language spoken by around
+228 651 040 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Bengali New Testament are shown in the table below.</p>
+<div id="htmlwidget-2388d4d65ad0b04814f3" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2388d4d65ad0b04814f3">{"x":{"filter":"none","vertical":false,"data":[["jana","boojha","cina","jana/boojha/cina-te para","too jana"],["'know'","'understand'","'know (person)'","'know/understand/know(person)-INF CAN/DO'","'PRTC know'"],["30","13","10","8/9/5","5"],["","","","",""],["","","","Achievement meaning",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="car-nicobarese-caq" class="section level5">
+<h5>Car Nicobarese (caq)</h5>
+<p>Car Nicobarese is an Austroasiatic&gt;Nicobaric language spoken by
+around 37 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Car Nicobarese New Testament are shown in the table below.</p>
+<div id="htmlwidget-737329ca236fe9a2ae73" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-737329ca236fe9a2ae73">{"x":{"filter":"none","vertical":false,"data":[["akaha-lōn","akaha-kūö","akaha elnang","huveūeu","nö akaha(-lōn/-kūö/elnang)","akaha(-lōn/-kūö) ngaich"],["'know-mind' = 'know (that)'","'know-face'= 'know (person)'","'know ear' = 'understand'","'know how'","'know/know person/understand PRTC' = 'find out/recognise/understand'","'know/know(person) PRTC'"],["30","10","7","3","10/3/4","3/1"],["","","","","",""],["","","","","",""],["","","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="chechen-che" class="section level5">
+<h5>Chechen (che)</h5>
+<p>Chechen is a Nakh-Daghestanian language spoken by around 1 526 650
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Chechen New Testament are shown in the table below.</p>
+<div id="htmlwidget-18f62ea1c80dd387822f" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-18f62ea1c80dd387822f">{"x":{"filter":"none","vertical":false,"data":[["S-DAT хаьа","кхетa","S-DAT вевза"],["'know'","'understand'","'know person'"],["22","9","12"],["","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="mandarin-chinese-cmn" class="section level5">
+<h5>Mandarin Chinese (cmn)</h5>
+<p>Mandarin Chinese is a Sino-Tibetan&gt;Sinitic language spoken by
+around 921 233 120 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Mandarin Chinese New Testament are shown in the table below.</p>
+<div id="htmlwidget-3fae5294ec89741ee8d3" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3fae5294ec89741ee8d3">{"x":{"filter":"none","vertical":false,"data":[["zhi¹-dao","ren¼-shi/de²/chu¹","ming²bai","xiao³-de²"],["'know-way' = 'know'","'know(person)-?/GET/come.out' = 'know person/recognise'","'clear, bright' = 'understand'","'understand-GET ' = 'understand, find out'"],["25","6/3/3","7","9"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="dimasa-dis" class="section level5">
+<h5>Dimasa (dis)</h5>
+<p>Dimasa is a Sino-Tibetan&gt;Brahmaputran&gt;Bodo-Garo language spoken
+by around 137 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Dimasa New Testament are shown in the table below.</p>
+<div id="htmlwidget-45c9888efac1f18e400a" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-45c9888efac1f18e400a">{"x":{"filter":"none","vertical":false,"data":[["thar-mai","thimi","khna","buji","phu"],["'know'","'know'","'hear'","'understand'","'able'"],["21","21","5","4","3"],["possibly thar 'find' and mai ' fully'","","","",""],["","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="middle-english-enm" class="section level5">
+<h5>Middle English (enm)</h5>
+<p>Middle English was an Indo-European&gt;Germanic language spoken in
+England around year 1000-1500.</p>
+<p>The principal constructions expressing knowledge predication in the
+lngname? New Testament are shown in the table below.</p>
+<div id="htmlwidget-92fb01dd3736b818c07f" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-92fb01dd3736b818c07f">{"x":{"filter":"none","vertical":false,"data":[["witen","knowen","vndurstoden"],["'know (that)'","'know'","'understand'"],["17","31","4"],["","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="basque-eus" class="section level5">
+<h5>Basque (eus)</h5>
+<p>Basque is a isolate language spoken by around 537 860 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Basque New Testament are shown in the table below.</p>
+<div id="htmlwidget-53b1e0f44138c6f06a66" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-53b1e0f44138c6f06a66">{"x":{"filter":"none","vertical":false,"data":[["(ba-)jakin","ezagutu","ulertu","jabetu","jakin/jabetu C-ena/C-ela"],["'(PRTCL)-know'","'know (person)'","'understand'","'realise, find out'","'know/realise C-COMP.NFACT/COMP.FACT'"],["(6) 24","10","8","6","4/11"],["","","","",""],["","","","",""],["synthetically conjugated","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="hungarian-hun" class="section level5">
+<h5>Hungarian (hun)</h5>
+<p>Hungarian is an Uralic language spoken by around 12 532 990
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Hungarian New Testament are shown in the table below.</p>
+<div id="htmlwidget-2c3c536d4a231cf1a0a9" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2c3c536d4a231cf1a0a9">{"x":{"filter":"none","vertical":false,"data":[["tud","ismer","ért","meg-(tud/ismer/ért)","del-ismer","tud O-DEL"],["'know'","'know (person)'","'catch' = 'understand'","'PFV-know/know(person)/understand' = 'know-as-achievement'","'DIR-know(person)' = 'recognise'","'know O-DEL' = 'know about/of something'"],["29","16","8","14","7","4"],["","","","","",""],["","","","","",""],["","","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="iu-mien-ium" class="section level5">
+<h5>Iu Mien (ium)</h5>
+<p>Iu Mien is a Hmong-Mien language spoken by around 813 600 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Iu Mien New Testament are shown in the table below.</p>
+<div id="htmlwidget-18c1f62ee93f7b17db27" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-18c1f62ee93f7b17db27">{"x":{"filter":"none","vertical":false,"data":[["hiuv (duqv) (nyei)","zieqv duqv","mengh baeqc"],["'know GET PRTC'","'know GET' = 'recognise'","'blear/bright be.white' = 'understand'"],["32 (24) (5)","8","9"],["","",""],["The difference between the constructions appears to be mainly aspectual","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="japanese-jpn" class="section level5">
+<h5>Japanese (jpn)</h5>
+<p>Japanese is a Japonic language spoken by around 126 257 610
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Japanese New Testament are shown in the table below.</p>
+<div id="htmlwidget-bef9b5dc5dc973e9a027" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bef9b5dc5dc973e9a027">{"x":{"filter":"none","vertical":false,"data":[["shiru","wakaru","satoru","shiru/wakaru-ta"],["'know'","'know/understand'","'realise'","'know/understand-PFV' = 'know-as-achievement'"],["32","10","4","3"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="kannada-kan" class="section level5">
+<h5>Kannada (kan)</h5>
+<p>Kannada is a Dravidian language spoken by around 43 644 310
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Kannada New Testament are shown in the table below.</p>
+<div id="htmlwidget-a5f643ce0072a26b591f" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a5f643ce0072a26b591f">{"x":{"filter":"none","vertical":false,"data":[["S-DAT tiśi(-du-kośśu)","S-DAT gottu(-iru)","artha-māḍi-kośśu","S-DAT artha-āgu","gurutu-isu/hiḍi"],["'S-DAT know(-AUX) = 'know'","'S-DAT know-(AUX)'","'meaning-MAKE-AUX' = 'understand'","'meaning-BECOME' = 'understand'","'identity-CAUS/catch' = 'recognise'"],["27","8","5","2","3"],["","","","",""],["","Mainly used with people and objects as known","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="halh-mongolian-khk" class="section level5">
+<h5>Halh Mongolian (khk)</h5>
+<p>Halh Mongolian is a Mongolic-Khitan language spoken by around 2 704
+030 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Halh Mongolian New Testament are shown in the table below.</p>
+<div id="htmlwidget-3986489634991e437845" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3986489634991e437845">{"x":{"filter":"none","vertical":false,"data":[["med","oilgoh","tani"],["'know'","'understand'","'recognise', (know person)'"],["33","10","8"],["","","Loan from Turkic"],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="korean-kor" class="section level5">
+<h5>Korean (kor)</h5>
+<p>Korean is a Koreanic language spoken by around 81 520 400 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Korean New Testament are shown in the table below.</p>
+<div id="htmlwidget-5f29e98cc710d729884c" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5f29e98cc710d729884c">{"x":{"filter":"none","vertical":false,"data":[["알다","깨닫다","듣다"],["'know'","'realise, understand'","'hear'"],["45","7","2"],["","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="swedish-swe" class="section level5">
+<h5>Swedish (swe)</h5>
+<p>Swedish is an Indo-European&gt;Germanic language spoken by around 9
+654 400 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Swedish New Testament are shown in the table below.</p>
+<div id="htmlwidget-8434963147028c5d8dfe" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8434963147028c5d8dfe">{"x":{"filter":"none","vertical":false,"data":[["veta","förstå","känna (igen)","kunna","få veta/reda på"],["'know'","'understand'","'know (person) again' = 'know person, (recognise)'","'be able, know how'","'get know/? On' = 'find out'"],["23","11","12","4","4/3"],["","","","",""],["","","","","på only with få reda"],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="thai-tha" class="section level5">
+<h5>Thai (tha)</h5>
+<p>Thai is a Tai-Kadai language spoken by around 20 715 470 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Thai New Testament are shown in the table below.</p>
+<div id="htmlwidget-358c1c7116b59b21f477" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-358c1c7116b59b21f477">{"x":{"filter":"none","vertical":false,"data":[["rúu","rúu-cak","sâap","khâw-cay","kɔ̂ɔ O dây"],["'know'","'know-know(obs.)' = 'know (person)'","'find out'","'enter-heart'='understand'","'hold O GET' = recognise'"],["20","10","7","9","3"],["","","","",""],["","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="turkish-tur" class="section level5">
+<h5>Turkish (tur)</h5>
+<p>Turkish is a Turkic language spoken by around 80 540 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Turkish New Testament are shown in the table below.</p>
+<div id="htmlwidget-8b450f8106f118d18fd1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8b450f8106f118d18fd1">{"x":{"filter":"none","vertical":false,"data":[["bil(-iyor)","anla","tanı(-iyor)","öğren"],["'know(-PROG)'","'understand'","'know(person)(-PROG)'","'find out'"],["9(11)","12","7(3)","8"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="oceania" class="section level3">
+<h3>Oceania</h3>
+<div id="htmlwidget-c7736a5ac69cc7c5ec6e" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c7736a5ac69cc7c5ec6e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false},"calls":[{"method":"addTiles","args":["OpenStreetMap.Mapnik",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"OpenStreetMap.Mapnik",{"errorTileUrl":"","noWrap":false,"opacity":1,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[-3.7167,-2.44717,-9.9747,-6.62687,-4.25927,-5.25216,-9.56687,-3.06952,-1.18016,-18.135,-14.2623,-3.2929,-5.94339,1.46563,-19.3733,-20.1008,-11.3796],[141.199,137.629,149.263,143.284,144.711,144.585,147.986,151.537,133.618,137.669,135.753,142.131,155.154,127.633,169.303,131.05,154.127],5,null,["","","","","","","","","","","","","","","","",""],{"interactive":true,"className":"","stroke":false,"color":"#03F","weight":1,"opacity":0.5,"fill":true,"fillColor":["#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#3B8BC6","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716","#F78716"],"fillOpacity":1},null,null,["<a href='https://glottolog.org/resource/languoid/id/ango1254' target='_blank'>Angor<\/a><br>Angor","<a href='https://glottolog.org/resource/languoid/id/bauz1241' target='_blank'>Bauzi<\/a><br>Bauzi","<a href='https://glottolog.org/resource/languoid/id/daga1275' target='_blank'>Daga<\/a><br>Daga","<a href='https://glottolog.org/resource/languoid/id/fasu1242' target='_blank'>Fasu<\/a><br>Fasu","<a href='https://glottolog.org/resource/languoid/id/kire1240' target='_blank'>Kire<\/a><br>Kire","<a href='https://glottolog.org/resource/languoid/id/kala1397' target='_blank'>Kalam<\/a><br>Kalam","<a href='https://glottolog.org/resource/languoid/id/doro1266' target='_blank'>Doromu-Koki<\/a><br>Doromu-Koki","<a href='https://glottolog.org/resource/languoid/id/kuot1243' target='_blank'>Kuot<\/a><br>Kuot","<a href='https://glottolog.org/resource/languoid/id/meya1236' target='_blank'>Meyah<\/a><br>Meyah","<a href='https://glottolog.org/resource/languoid/id/krio1252' target='_blank'>Kriol<\/a><br>Kriol","<a href='https://glottolog.org/resource/languoid/id/nung1290' target='_blank'>Wubuy<\/a><br>Wubuy","<a href='https://glottolog.org/resource/languoid/id/oloo1241' target='_blank'>Olo<\/a><br>Olo","<a href='https://glottolog.org/resource/languoid/id/roto1249' target='_blank'>Rotokas<\/a><br>Rotokas","<a href='https://glottolog.org/resource/languoid/id/taba1263' target='_blank'>Tabaru<\/a><br>Tabaru","<a href='https://glottolog.org/resource/languoid/id/nort2847' target='_blank'>North Tanna<\/a><br>North Tanna","<a href='https://glottolog.org/resource/languoid/id/warl1254' target='_blank'>Warlpiri<\/a><br>Warlpiri","<a href='https://glottolog.org/resource/languoid/id/yele1255' target='_blank'>Yele<\/a><br>Yele"],null,["Angor","Bauzi","Daga","Fasu","Kire","Kalam","Doromu-Koki","Kuot","Meyah","Kriol","Wubuy","Olo","Rotokas","Tabaru","North Tanna","Warlpiri","Yele"],{"interactive":false,"permanent":false,"direction":"right","opacity":1,"offset":[7.5,0],"textsize":"10px","textOnly":true,"style":{"font-size":"15px","font-family":"sans-serif"},"className":"","sticky":true},null]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]},{"method":"addLegend","args":[{"colors":["#3B8BC6","#F78716"],"labels":["Additional","Regular"],"na_color":null,"na_label":"NA","opacity":1,"position":"topright","type":"factor","title":null,"extra":null,"layerId":null,"className":"info legend","group":null}]}],"limits":{"lat":[-20.1008,1.46563],"lng":[127.633,169.303]}},"evals":[],"jsHooks":[]}</script>
+<div id="anggor-agg" class="section level5">
+<h5>Anggor (agg)</h5>
+<p>Anggor is a Senagi language spoken by around 1 270 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Anggor New Testament are shown in the table below.</p>
+<div id="htmlwidget-737d3609d51989cbbf8b" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-737d3609d51989cbbf8b">{"x":{"filter":"none","vertical":false,"data":[["fɨfɨrɨ","fɨfɨrɨe/hɨmborɨ haya","fɨfɨrɨ-ma-rɨ-SBJ-O","fɨfɨrɨ-SBJ-mbo-an-SBJ","hɨmborɨ","türüfoarɨ- he-SBJ-mbo-wambo"],["'know'","'know/hear COMPLETIVE'","'know-TAM-TR 'recognise'","'know-?-STATIVE'","'hear'","?'understand'"],["31","2","2","6","3","1"],["","","","","",""],["","","","","",""],["","","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="bauzi-bvz" class="section level5">
+<h5>Bauzi (bvz)</h5>
+<p>Bauzi is a Geelvink Bay language spoken by around 1 350 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Bauzi New Testament are shown in the table below.</p>
+<div id="htmlwidget-bb36a2faf211ceab99b4" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bb36a2faf211ceab99b4">{"x":{"filter":"none","vertical":false,"data":[["ozo-bohu","bie","vabi","ai","aa/ai-me ozo-bohu"],["'think-?long/far' = 'know'","'not know, not be able'","'not know'","'hear'","'see/hear-SA know'"],["26","6","4","7","3 /4"],["","","","",""],["","","","",""],["","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="daga-dgz" class="section level5">
+<h5>Daga (dgz)</h5>
+<p>Daga is a Dagan language spoken by around 9 000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Daga New Testament are shown in the table below.</p>
+<div id="htmlwidget-06b87e3516ba91a90075" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-06b87e3516ba91a90075">{"x":{"filter":"none","vertical":false,"data":[["asigi(-POSS-LOC) (tapen)","anupen","anu awapen","oare","ire yawapen","anu kakayasepen"],["'knowledge-POSS-LOC DO' = 'know'","'hear'","'hear/know penetrate' = 'understand'","'not know'","'?INTENSIFIER see' = 'recognise'","'hear/know do.well' = 'know/understand'"],["16","18","6","8","5","2"],["","","","","",""],["","","","","",""],["","","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="fasu-faa" class="section level5">
+<h5>Fasu (faa)</h5>
+<p>Fasu is a Fasu language spoken by around 1 100 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Fasu New Testament are shown in the table below.</p>
+<div id="htmlwidget-8731821c60d7de49ef17" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8731821c60d7de49ef17">{"x":{"filter":"none","vertical":false,"data":[["hemakapu(-ri)","kai","ase","himete"],["'know(-?stative)'","'hear'","'see' = 'recognise/know person'","'not know'"],["31 (10)","7","6","3"],["might contain the root -pu- 'go'","","",""],["Also used for 'think', 'remember' etc – all cognitive meanings","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="kire-geb" class="section level5">
+<h5>Kire (geb)</h5>
+<p>Kire is a Lower Sepik-Ramu language spoken by around 2 500
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Kire New Testament are shown in the table below.</p>
+<div id="htmlwidget-48c3998d4bd02ed42f1b" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-48c3998d4bd02ed42f1b">{"x":{"filter":"none","vertical":false,"data":[["kaŋgi","mbararagi","kaŋgi ntɨɨriveŋ","sagi"],["'know'","'hear'","'know ?' = understand'","'understand'"],["42","5","3","2"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="kalam-kmh" class="section level5">
+<h5>Kalam (kmh)</h5>
+<p>Kalam is a Nuclear Trans New Guinea language spoken by around 20 000
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Kalam New Testament are shown in the table below.</p>
+<div id="htmlwidget-47f2a6823c604d96fc74" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-47f2a6823c604d96fc74">{"x":{"filter":"none","vertical":false,"data":[["niŋ","niŋ rek","niŋ-rep gi"],["'know'","'know PRTCL'","'know-well DO'"],["42","4","3"],["","",""],["Also covers perception and other cognition","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="doromu-koki-kqc" class="section level5">
+<h5>Doromu-Koki (kqc)</h5>
+<p>Doromu-Koki is a Manubaran language spoken by around 2 000
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Doromu-Koki New Testament are shown in the table below.</p>
+<div id="htmlwidget-0517b00112cb591fc8d9" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0517b00112cb591fc8d9">{"x":{"filter":"none","vertical":false,"data":[["diba (ni)","toto","ve-i mama re","neide"],["'knowledge (AUX)' = 'know'","'not know'","'see-? FULLY DO' = ' know-as-achievement'","'hear'"],["23 (10)","7","9","4"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="kuot-kto" class="section level5">
+<h5>Kuot (kto)</h5>
+<p>Kuot is an isolate language spoken by around 1 500 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Kuot New Testament are shown in the table below.</p>
+<div id="htmlwidget-9d29dce8d80f8a290adc" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9d29dce8d80f8a290adc">{"x":{"filter":"none","vertical":false,"data":[["it (ara/kan)","raki"],["'know (ASP/EMPH)'","'recognise'"],["43 (9/4)","3"],["",""],["",""],["",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="meyah-mej" class="section level5">
+<h5>Meyah (mej)</h5>
+<p>Meyah is an East Bird’s Head language spoken by around 14 800
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Meyah New Testament are shown in the table below.</p>
+<div id="htmlwidget-e372290ff4e32d69138b" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e372290ff4e32d69138b">{"x":{"filter":"none","vertical":false,"data":[["ejginaga rot (fob)","odou ebriyi gij","eg","ek"],["'know PREP (IAM)' = 'know'","'liver split in' = 'understand'","'hear'","'see'"],["29","14","5","3"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="wubuy-nuy" class="section level5">
+<h5>Wubuy (nuy)</h5>
+<p>Wubuy is a Gunwinyguan language spoken by around 280 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Wubuy New Testament are shown in the table below.</p>
+<div id="htmlwidget-f8bd79d15b3cb5e8df7d" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f8bd79d15b3cb5e8df7d">{"x":{"filter":"none","vertical":false,"data":[["marrbuy(-ma)","maḻaḻadi","nguynju-ga"],["'know(-INCH)'","'not know'","'similar-FACTATIVE' = 'recognise'"],["34 (7)","9","5"],["","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="olo-ong" class="section level5">
+<h5>Olo (ong)</h5>
+<p>Olo is a Nuclear Torricelli language spoken by around 13 700
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Olo New Testament are shown in the table below.</p>
+<div id="htmlwidget-122de00f0cbc746942e2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-122de00f0cbc746942e2">{"x":{"filter":"none","vertical":false,"data":[["retai","ironom ire/asi- O","ulu matufu","ingitei"],["'know'","'not.know with/with'","'see recognise'","'hear'"],["31","7","3","7"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="rotokas-roo" class="section level5">
+<h5>Rotokas (roo)</h5>
+<p>Rotokas is a North Bougainville language spoken by around 11 600
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Rotokas New Testament are shown in the table below.</p>
+<div id="htmlwidget-9b38979595514e2e518d" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9b38979595514e2e518d">{"x":{"filter":"none","vertical":false,"data":[["tarai(-pa)","evei(-pa)","uvu"],["'know(-CONT)'","'recognise(-CONT)'","'hear'"],["36 (27)","7 (5)","3"],["Might be related to tara 'look for'","",""],["","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="kriol-rop" class="section level5">
+<h5>Kriol (rop)</h5>
+<p>Kriol is an English-lexifier Creole language spoken by around
+speakers 17 490 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Kriol New Testament are shown in the table below.</p>
+<div id="htmlwidget-4f6a55632f0412dcef70" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4f6a55632f0412dcef70">{"x":{"filter":"none","vertical":false,"data":[["sabi (na)","irrim"],["'know (PERF)'","'hear'"],["41 (3)","3"],["",""],["",""],["na occurs at the end of the clause",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="tabaru-tby" class="section level5">
+<h5>Tabaru (tby)</h5>
+<p>Tabaru is a North Halmahera language spoken by around 15 000
+people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Tabaru New Testament are shown in the table below.</p>
+<div id="htmlwidget-f83c4c08c70f7a06982c" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f83c4c08c70f7a06982c">{"x":{"filter":"none","vertical":false,"data":[["nako(-kau)","sahe","isen"],["'know(-IAM)'","'understand'","'hear'"],["37","10","4"],["","",""],["Used with intransitive paradigm for know that and with transitive paradigm with person obejcts","",""],["","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="north-tanna-tnn" class="section level5">
+<h5>North Tanna (tnn)</h5>
+<p>North Tanna is an Austronesian&gt;Malayo-Polynesian language spoken
+by around 5000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+North Tanna New Testament are shown in the table below.</p>
+<div id="htmlwidget-98e5584efa5f8432ced2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-98e5584efa5f8432ced2">{"x":{"filter":"none","vertical":false,"data":[["Ɨtun (rəkɨs)","əruru","Ɨn-ɨtun","əto"],["'know (IAM)'","'not know'","'?PERF-know' = 'know-as-achievement'","'hear'"],["38 (6)","8","6","8"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="warlpiri-wbp" class="section level5">
+<h5>Warlpiri (wbp)</h5>
+<p>Warlpiri is a Pama-Nyungan language spoken by around 2300 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Warlpiri New Testament are shown in the table below.</p>
+<div id="htmlwidget-d4b80eea7d06626a0fb1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d4b80eea7d06626a0fb1">{"x":{"filter":"none","vertical":false,"data":[["milya-pi","purda-nya"],["'know-AUX'","'hear-see' = 'hear'"],["32","5"],["",""],["",""],["",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="yele-yle" class="section level5">
+<h5>Yele (yle)</h5>
+<p>Yele is an isolate language spoken by around 5000 people.</p>
+<p>The principal constructions expressing knowledge predication in the
+Yele New Testament are shown in the table below.</p>
+<div id="htmlwidget-3901f38a25303bca7075" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3901f38a25303bca7075">{"x":{"filter":"none","vertical":false,"data":[["O S.POSS lama SIT","w:ee","ny:ee","mya"],["'O S.POSS knowledge sits' = 'the known sits in the knower's knowledge' = 'know'","'understand, realise'","'hear'","'recognise'"],["23","14","5","4"],["","","",""],["","","",""],["","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Construction<\/th>\n      <th>Gloss<\/th>\n      <th>Ocurrences<\/th>\n      <th>EtymNotes<\/th>\n      <th>UsageNotes<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="download" class="section level3">
+<h3>Download</h3>
+<p><a href="constructions.csv" download>Download the full list of
+constructions</a></p>
+</div>
+
+<br>
+<br>
+<p> <center> Anna Sjöberg, 2023 </center></p>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4,h5",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

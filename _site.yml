@@ -4,6 +4,8 @@ navbar:
   left:
     - text: "Main"
       href: index.html
+    - text: "Constructions"
+      href: languages.html
     - text: "Dimensions"
       href: dimensions.html
     - text: "Markers"

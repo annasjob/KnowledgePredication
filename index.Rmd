@@ -27,6 +27,7 @@ This site contains supplementary materials to my dissertation **Knowledge predic
 
 The site contains:
 
+- <a href="languages.html">lists of the principal constructions</a> expressing knowledge predication in the languages of the sample
 - the <a href="clusters.html">full clustering</a> of the cognition-perception-ability verses analysed, presented in chapter 5 of *Knowledge predication*
 - the <a href="dimensions.html">location of the verses</a> on the six analysed dimensions fo CMDS analysis presented in chapter 7
 - the <a href="markers.html">markers</a> correlated with these dimensions, discussed in chapter 9
